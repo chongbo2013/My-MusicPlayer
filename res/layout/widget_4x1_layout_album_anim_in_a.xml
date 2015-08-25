@@ -1,0 +1,16 @@
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:layoutAnimation="@anim/fade_in_controller"
+	android:id="@+id/widget_album_layout_a"
+    >
+
+	<ImageView
+        android:id="@+id/widget_album"
+        android:layout_width="@dimen/widget_img_width"
+        android:layout_height="@dimen/widget_img_width"
+        android:scaleType="fitStart" 
+        />
+</RelativeLayout>

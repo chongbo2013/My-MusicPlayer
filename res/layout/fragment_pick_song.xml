@@ -1,0 +1,122 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@android:color/white">
+
+    <include layout="@layout/v_bg_cover_mask" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/status_bar_height">
+
+        <RelativeLayout
+            android:id="@id/llo1"
+            style="@style/ActionBar"
+            android:layout_alignParentTop="true">
+
+            <ImageButton
+                android:id="@id/bt_back"
+                android:layout_width="@dimen/actionbar_height"
+                android:layout_height="@dimen/actionbar_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"                
+                android:background="@drawable/se_action_back" />
+
+            <TextView
+                style="@style/TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="@string/add_song" />
+
+            <ImageButton
+                android:id="@id/bt_select_all"
+                android:layout_width="@dimen/actionbar_height"
+                android:layout_height="@dimen/actionbar_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/se_btn_select_all"
+                android:background="@android:color/transparent"
+                 />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/ab_solid_shadow_holo" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:paddingLeft="@dimen/list_padding"
+            android:paddingRight="@dimen/list_padding"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <!--<ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/magnifier"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"/> -->
+
+            <com.lewa.view.ClearEditText
+                android:id="@id/et_search"
+                android:layout_width="fill_parent"
+                android:layout_height="51dp"
+                android:paddingLeft="40dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/se_et_search"
+                android:singleLine="true"
+                android:textCursorDrawable="@drawable/sv_cursor"
+                android:textSize="15.0dip"
+                android:textColor="@color/white_text" />
+
+        </RelativeLayout>
+
+        <com.lewa.view.MaskEndListView
+            android:id="@id/lv_song"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:layout_marginBottom="50dp"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:divider="@color/lv_gray_divider"
+            android:dividerHeight="1dp"
+            android:layout_gravity="center"
+            app:lv_header_mask="@drawable/start_mask"
+            app:lv_header_mask_height="@dimen/header_mask_height"
+            app:lv_footer_mask="@drawable/end_mask"
+            app:lv_footer_mask_height="@dimen/footer_mask_height" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/bt_add_song"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_panel_bg"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:clickable="false"
+            android:duplicateParentState="true"
+            android:src="@drawable/actionbar_confirm" />
+
+    </LinearLayout>
+
+</FrameLayout>

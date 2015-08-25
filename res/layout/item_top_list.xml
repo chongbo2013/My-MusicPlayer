@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:paddingLeft="@dimen/list_padding"
+        android:paddingRight="@dimen/list_padding">
+
+        <include
+            android:id="@id/l_cover"
+            layout="@layout/v_playable_cover_140" />
+
+        <RelativeLayout
+            android:id="@id/llo1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_toRightOf="@id/l_cover"
+            android:layout_marginLeft="15dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@id/tv_top_list_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    style="@style/TextView.Middle.White" />
+
+                <TextView
+                    android:id="@id/tv_update_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="left|center_vertical"
+                    style="@style/TextView.Small.TransWhite" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/lv_divider" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

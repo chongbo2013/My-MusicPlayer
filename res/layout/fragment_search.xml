@@ -1,0 +1,114 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity$PlaceholderFragment" >
+
+    <ImageView
+        android:id="@id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/d_bg_gradient_white_60_100" />
+
+    <!--remove android:paddingTop="@dimen/status_bar_height", ruiwei-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingBottom="5dp"
+        android:paddingTop="15dp"
+        >
+
+        <RelativeLayout
+            android:id="@id/llo1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:padding="5dp" >
+
+            <ImageButton
+                android:id="@id/bt_back"
+                android:layout_width="@dimen/actionbar_height"
+                android:layout_height="@dimen/actionbar_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/se_action_back"
+                 />
+
+            <SearchView
+                android:id="@id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="51dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/bt_back"
+                android:iconifiedByDefault="true"
+                android:imeOptions="flagNoExtractUi|flagNoFullscreen|actionSearch"
+                android:inputType="textCapWords"    
+                android:queryHint="@string/search_text_hint"
+                />
+                
+        </RelativeLayout>
+        
+        <TextView
+            android:id="@+id/search_result_hint" 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white_text"
+            android:text="@string/app_name"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            />
+		
+        <LinearLayout
+            android:id="@+id/histroy_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:orientation="vertical"
+            >
+
+            <ListView
+                android:id="@+id/lv_histroy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:fadingEdge="none"
+                android:scrollbars="none" 
+                android:divider="@color/lv_divider"
+                android:layout_weight="1"
+                />
+
+            <Button
+                android:id="@+id/bt_clear"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/se_btn_common"
+                android:textColor="@color/black_a_80"
+                android:gravity="center"
+                android:textSize="@dimen/item_title_text_size"
+                android:text="@string/clear_histroy" 
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@id/lv_search"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</FrameLayout>

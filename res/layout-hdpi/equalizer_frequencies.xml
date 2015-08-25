@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent" >
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent" >
+		<RelativeLayout
+		    android:id="@+id/eq_cursor_value"
+		    android:layout_width="30dip"
+		    android:layout_height="match_parent"
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginBottom="22dp" >
+	
+			<TextView
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentTop="true"
+			    android:layout_marginTop="18dp"
+			    android:text="@string/equalizer_max_value"
+			    android:gravity="center_horizontal"
+			    android:textSize="12sp" />
+	
+			<TextView
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_centerVertical="true"
+			    android:gravity="center_horizontal"
+			    android:text="@string/equalizer_zero_value"
+			    android:textSize="12sp" />
+			<TextView
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentBottom="true"
+			    android:layout_marginBottom="18dp"
+			    android:gravity="center_horizontal"
+			    android:text="@string/equalizer_min_value"
+			    android:textSize="12sp" />		    
+		</RelativeLayout>
+	    
+		<RelativeLayout
+		    android:id="@+id/eq_lower_seekbar"
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:layout_alignParentBottom="true"
+		    android:layout_marginBottom="16dp"
+		    android:layout_marginEnd="40dip"
+		    android:layout_toEndOf="@id/eq_cursor_value" >
+	
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="26dp"
+				android:src="@drawable/equalizer_value_line" />
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/equalizer_value_line" />
+		
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="26dp"
+				android:src="@drawable/equalizer_value_line" />
+			
+			<com.lewa.view.VerticalSeekBar
+				android:id="@+id/lowerSeekbar"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentTop="true" />
+		</RelativeLayout>
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignStart="@id/eq_lower_seekbar"
+		    android:layout_alignEnd="@id/eq_lower_seekbar"
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerHorizontal="true"
+		    android:gravity="center_horizontal"
+		    android:text="@string/equalizer_lower_frequency"
+		    android:textSize="12sp" />
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_marginStart="97dip" >
+		<RelativeLayout 
+		    android:id="@+id/eq_low_seekbar"
+		    android:layout_width="wrap_content"
+	    	android:layout_height="match_parent"
+	    	android:layout_alignParentBottom="true"
+	    	android:layout_marginBottom="16dp"
+		    >
+		    <ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="26dp"
+				android:src="@drawable/equalizer_value_line" />
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/equalizer_value_line" />
+		
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="26dp"
+				android:src="@drawable/equalizer_value_line" />
+			<com.lewa.view.VerticalSeekBar
+				android:id="@+id/lowSeekbar"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentTop="true" />
+		</RelativeLayout>
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignStart="@id/eq_low_seekbar"
+		    android:layout_alignEnd="@id/eq_low_seekbar"
+		    android:layout_alignParentBottom="true"
+		    android:layout_centerHorizontal="true"
+		    android:gravity="center_horizontal"
+		    android:text="@string/equalizer_low_frequency"
+		    android:textSize="12sp"
+		    />
+			
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_marginStart="164dip" >
+		<RelativeLayout 
+		    android:id="@+id/eq_middle_seekbar"
+		    android:layout_width="wrap_content"
+	    	android:layout_height="match_parent"
+	    	android:layout_alignParentBottom="true"
+	    	android:layout_marginBottom="16dp"
+		    >
+		    <ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="26dp"
+				android:src="@drawable/equalizer_value_line" />
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/equalizer_value_line" />
+		
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="26dp"
+				android:src="@drawable/equalizer_value_line" />
+			<com.lewa.view.VerticalSeekBar
+				android:id="@+id/middleSeekbar"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentTop="true" />
+		</RelativeLayout>
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignEnd="@id/eq_middle_seekbar"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignStart="@id/eq_middle_seekbar"
+		    android:layout_centerHorizontal="true"
+		    android:gravity="center_horizontal"
+		    android:text="@string/equalizer_middle_frequency"
+		    android:textSize="12sp" />
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_marginStart="231dip" >
+		<RelativeLayout 
+		    android:id="@+id/eq_high_seekbar"
+		    android:layout_width="wrap_content"
+	    	android:layout_height="match_parent"
+	    	android:layout_alignParentBottom="true"
+	    	android:layout_marginBottom="16dp"
+		    >
+		    <ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="26dp"
+				android:src="@drawable/equalizer_value_line" />
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/equalizer_value_line" />
+		
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="26dp"
+				android:src="@drawable/equalizer_value_line" />
+			<com.lewa.view.VerticalSeekBar
+				android:id="@+id/highSeekbar"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentTop="true" />
+		</RelativeLayout>
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignEnd="@id/eq_high_seekbar"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignStart="@id/eq_high_seekbar"
+		    android:layout_centerHorizontal="true"
+		    android:gravity="center_horizontal"
+		    android:text="@string/equalizer_high_frequency"
+		    android:textSize="12sp" />
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="match_parent"
+	    android:layout_marginStart="298dip" >
+		<RelativeLayout 
+		    android:id="@+id/eq_higher_seekbar"
+		    android:layout_width="wrap_content"
+	    	android:layout_height="match_parent"
+	    	android:layout_alignParentBottom="true"
+	    	android:layout_marginBottom="16dp"
+		    >
+		    <ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentTop="true"
+				android:layout_centerHorizontal="true"
+				android:layout_marginTop="26dp"
+				android:src="@drawable/equalizer_value_line" />
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:src="@drawable/equalizer_value_line" />
+		
+			<ImageView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentBottom="true"
+				android:layout_marginBottom="26dp"
+				android:src="@drawable/equalizer_value_line" />
+			<com.lewa.view.VerticalSeekBar
+				android:id="@+id/higherSeekbar"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				android:layout_centerHorizontal="true"
+				android:layout_alignParentTop="true" />
+		</RelativeLayout>
+
+		<TextView
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignEnd="@id/eq_higher_seekbar"
+		    android:layout_alignParentBottom="true"
+		    android:layout_alignStart="@id/eq_higher_seekbar"
+		    android:layout_centerHorizontal="true"
+		    android:gravity="center_horizontal"
+		    android:text="@string/equalizer_higher_frequency"
+		    android:textSize="12sp" />
+	</RelativeLayout>
+</RelativeLayout>	

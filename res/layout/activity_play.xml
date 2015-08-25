@@ -1,0 +1,144 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"      
+    android:clipChildren="false"
+    tools:context=".PlayActivity"
+    tools:ignore="MergeRootFrame">
+
+    <ImageView
+        android:id="@id/iv_origin_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover" />
+
+    <ImageView
+        android:id="@id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover" />
+
+    <com.lewa.view.ImageViewParallax
+        android:id="@id/iv_blurred"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover" />
+
+    <ImageView
+        android:id="@id/iv_full_blurred"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover" />
+
+    <LinearLayout
+        android:id="@id/lo_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/d_bg_gradient_black_0_90"></LinearLayout>
+
+    <!--<include layout="@layout/v_playlist" /> -->
+
+    <RelativeLayout
+        android:id="@id/rl_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/vp_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="75dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:clipChildren="false" />
+
+    </RelativeLayout>
+
+
+    <!--<RelativeLayout
+        android:id="@id/rlo3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/d_bg_gradient_black_0_50"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:id="@id/rlo1"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"           
+            android:layout_alignParentTop="true">
+
+            <ImageButton
+                android:id="@id/bt_library"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/se_btn_library"
+                android:background="@android:color/transparent" />
+
+            <TextView
+                android:id="@id/tv_playlist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="15dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </RelativeLayout> -->
+
+    <!--<RelativeLayout
+        android:id="@id/lo_copyright"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"> -->
+
+        <ImageView
+            android:id="@id/lo_copyright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baidu_logo_white"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp" 
+            android:visibility="gone"/>
+
+    <!--
+                android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"            
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp" 
+
+    </RelativeLayout> -->
+
+    <LinearLayout
+        android:id="@id/lo_library_trigger"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:gravity="top|center_horizontal">
+
+        <ImageButton
+            android:id="@id/bt_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/status_bar_height"
+            android:src="@drawable/se_btn_library"
+            android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+</FrameLayout>

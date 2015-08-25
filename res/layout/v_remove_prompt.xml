@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@id/tv_remove_song"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rlo2"
+        style="@style/TextView.Large.DarkGray"/>
+
+    <CheckBox
+        android:id="@id/cb_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:button="@drawable/checkbox"
+        android:textColor="@android:color/black"
+        style="@style/TextView.Middle.DarkGray"
+        android:text="@string/remove_local_song_text"/>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="trans_white">#99ffffff</color>
+
+    <!--    from native -->
+    <color name="appwidget_text">#ffffffff</color>
+    <color name="appwidget_text_shadow_color">#20000000</color>
+
+    <color name="white_text">#ffffffff</color>
+
+    <color name="dialog_bg">#e6000000</color>
+
+    <color name="black_a_80">#CC000000</color>
+
+    <color name="white_translucence_text">#7fffffff</color>
+
+    <color name="black_hint">#40000000</color>
+    
+    <color name="dark_gray_text">#ff2b344a</color>
+
+    <color name="blue_text">#ff00a1ff</color>
+
+    <color name="gray_text">#ffa6aab3</color>
+
+    <color name="dark_gray_translucence_text">#7f2b344a</color>
+
+    <!-- <color name="lv_divider">#ffd7d6de</color> -->
+    <color name="lv_divider">#33ffffff</color>
+    <color name="lv_long_divider">#33ffffff</color>
+    <color name="lv_gray_divider">#17000000</color>
+    <color name="a40_black">#66000000</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="clickhigh">#19000000</color>
+    
+</resources>

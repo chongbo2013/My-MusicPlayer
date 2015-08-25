@@ -1,0 +1,94 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/d_bg_gradient_white_60_100"/>
+
+        <!-- android:background="@drawable/d_bg_gradient_white_60_100" android:clickable="true"-->
+        
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/item_height"
+        android:paddingTop="@dimen/status_bar_height">
+
+        <RelativeLayout
+            style="@style/ActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            
+            android:layout_alignParentTop="true">
+
+            <ImageButton
+                android:id="@id/bt_back"
+                android:layout_width="@dimen/actionbar_height"
+                android:layout_height="@dimen/actionbar_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"                
+                android:background="@drawable/se_action_back" />
+
+            <TextView
+                android:id="@id/tv_artist_name"               
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/bt_back"
+                android:layout_marginRight="@dimen/actionbar_height"
+                android:gravity="center"
+                android:layout_centerInParent="true" 
+                style="@style/TextView.Title"
+                android:singleLine="true"
+                android:ellipsize="middle"/>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/lv_gray_divider" />
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0">
+
+            <com.lewa.view.MaskEndListView
+                android:id="@id/lv_album"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="none"
+                android:fadingEdge="none"
+                android:divider="@null"
+                android:layout_gravity="center"
+                app:lv_header_mask="@drawable/start_mask"
+                app:lv_header_mask_height="@dimen/header_mask_height"
+                app:lv_footer_mask="@drawable/end_mask"
+                app:lv_footer_mask_height="@dimen/footer_mask_height" />
+
+            <TextView
+                android:id="@id/llo1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                style="@style/TextView.XLarge.White"
+                android:text="@string/no_artist_album_text"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"> 
+     <!--<item android:id="@android:id/background">
+		<nine-patch android:src="@drawable/widget_music_jd_bg" />
+	</item>
+
+
+    <item android:id="@android:id/progress">
+		<nine-patch android:src="@drawable/widget_music_jd" />
+     </item> -->
+	 
+	 <item android:id="@android:id/background"> 
+        <nine-patch android:src="@drawable/widget_music_jd_bg">  
+        </nine-patch>  
+    </item>  
+
+
+	<item android:id="@android:id/progress"> 
+       <clip> 
+           <nine-patch android:src="@drawable/widget_music_jd">  
+           </nine-patch> 
+       </clip> 
+    </item> 
+</layer-list> 

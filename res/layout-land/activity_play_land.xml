@@ -1,0 +1,194 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".PlayActivity$LandPlaceholderFragment">
+
+    <ImageView
+        android:id="@id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover_background"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@id/iv_full_blurred"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover" />
+
+    <LinearLayout
+        android:id="@id/lo_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@color/a40_black"
+        android:orientation="vertical"></LinearLayout>
+
+    <!-- <RelativeLayout
+        android:id="@id/rl_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_gravity="bottom"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@id/tv_playlist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/rlo2"
+            style="@style/TextView.Large.White" />
+
+
+        <RelativeLayout
+            android:id="@id/rlo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/tv_song_name"
+            android:layout_marginBottom="10dp"
+            android:clipChildren="false"
+            android:layerType="software">
+
+            <android.support.v4.view.ViewPager
+                android:id="@id/vp_playlist"
+                android:layout_width="@dimen/playlist_cover_large_size"
+                android:layout_height="@dimen/playlist_cover_large_size"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:clipChildren="false" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/tv_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/bt_home"
+            android:layout_marginBottom="10dp"
+            style="@style/TextView.Small.White" />
+
+        <ImageButton
+            android:id="@id/bt_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/se_btn_home"
+            android:background="@android:color/transparent" />
+
+    </RelativeLayout> -->
+
+    <RelativeLayout
+        android:id="@id/rl_play"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone"
+        android:paddingTop="5dp"
+        android:paddingRight="35dp"
+        android:paddingBottom="30dp">
+
+
+        <com.lewa.view.MaskEndListView
+            android:id="@id/lv_song"
+            android:layout_width="325dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            app:lv_footer_mask="@drawable/end_mask"
+            app:lv_footer_mask_height="@dimen/footer_mask_height" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/lv_song"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@id/tv_album_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                style="@style/TextView.Large.White" />
+
+            <FrameLayout
+                android:layout_width="@dimen/mask_image_view_size"
+                android:layout_height="@dimen/mask_image_view_size">
+
+                <com.lewa.view.MaskImage.MaskImageView
+                    android:id="@id/iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/cover"
+                    android:background="@color/transparent"
+                    app:layout_size="@dimen/mask_image_view_size" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/highlight_450" />
+
+                <LinearLayout
+                    android:id="@id/bt_play"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:descendantFocusability="blocksDescendants"
+                    android:clickable="true"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@id/iv_play_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:clickable="false"
+                        android:src="@drawable/se_btn_pause"
+                        android:background="@android:color/transparent" />
+                </LinearLayout>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@id/tv_song_name2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                style="@style/TextView.Small.White" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@id/bt_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/se_btn_cover"
+            android:background="@android:color/transparent" />
+    </RelativeLayout> -->
+
+</FrameLayout>

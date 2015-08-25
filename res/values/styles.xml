@@ -1,0 +1,206 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.NoActionBar">
+        
+    </style>
+
+
+    <style name="Theme.FileManagerV5StyleNew" parent="@lewa:style/V5.Theme"> //@lewa:style/V5.Theme为原有Activity style
+             <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <!-- Navigation Bar -->
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+    
+    <style name="V5AnimTheme" parent="@lewa:style/V5.Theme"> 
+        <item name="android:windowNoTitle">true</item>
+    	
+    </style>
+
+     <style name="TransparentTheme" parent="@lewa:style/V5.Theme.Holo.Light.NoActionBar"> <!-- use for PlayActivity theme  parent="android:Theme.Holo.Light.NoActionBar"-->
+        <!--<item name="android:windowAnimationStyle">@style/PlayAnimation</item> -->
+        <!--<item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>-->
+    </style>
+    
+    
+    <style name="V5NoAnimTheme" parent="@lewa:style/V5.Theme.Holo.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!-- <item name="android:windowAnimationStyle">@style/NoAnimation</item> -->
+    </style>
+    <style name="NoAnimation" parent="@android:style/Animation">	<!-- use for libraryActivity anim-->
+        <item name="android:activityOpenEnterAnimation">@anim/keep</item>
+        <item name="android:activityOpenExitAnimation">@anim/keep</item>
+        <item name="android:activityCloseEnterAnimation">@anim/keep</item>
+        <item name="android:activityCloseExitAnimation">@anim/keep</item>
+        
+        <!-- <item name="android:taskOpenEnterAnimation">@anim/keep</item>
+        <item name="android:taskOpenExitAnimation">@anim/keep</item>
+        <item name="android:taskCloseEnterAnimation">@anim/keep</item>
+        <item name="android:taskCloseExitAnimation">@anim/keep</item>
+        
+        <item name="android:taskToFrontEnterAnimation">@anim/keep</item>
+        <item name="android:taskToFrontExitAnimation">@anim/keep</item>
+        <item name="android:taskToBackEnterAnimation">@anim/keep</item>
+        <item name="android:taskToBackExitAnimation">@anim/keep</item> --> 
+    </style>
+
+    <style name="PlayAnimation" parent="@android:style/Animation">	<!-- use for PlayActivity anim-->
+        <item name="android:activityOpenEnterAnimation">@lewa:anim/sub_activity_open_enter</item>
+        <item name="android:activityOpenExitAnimation">@lewa:anim/sub_activity_open_exit</item>
+        <item name="android:activityCloseEnterAnimation">@lewa:anim/sub_activity_close_enter</item>
+        <item name="android:activityCloseExitAnimation">@lewa:anim/sub_activity_close_exit</item>
+        
+        <!--<item name="android:taskOpenEnterAnimation">@lewa:anim/sub_activity_open_enter</item>
+        <item name="android:taskOpenExitAnimation">@lewa:anim/sub_activity_open_exit</item>
+        <item name="android:taskCloseEnterAnimation">@lewa:anim/sub_activity_close_enter</item>
+        <item name="android:taskCloseExitAnimation">@lewa:anim/sub_activity_close_exit</item> -->
+        
+        <!--<item name="android:taskToFrontEnterAnimation">@anim/panel_open_enter</item>
+        <item name="android:taskToFrontExitAnimation">@anim/panel_open_exit</item>
+        <item name="android:taskToBackEnterAnimation">@anim/panel_close_enter</item>
+        <item name="android:taskToBackExitAnimation">@anim/panel_close_exit</item> -->
+    </style>
+    
+
+    <style name="ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/actionbar_height</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <!-- <item name="android:background">@drawable/ab_solid_light_holo</item> -->
+    </style>
+
+    <style name="TextWidgetStyle">
+		<item name="android:shadowColor">@color/appwidget_text_shadow_color</item>
+		<item name="android:shadowDx">3</item>
+		<item name="android:shadowDy">3</item>
+		<item name="android:shadowRadius">1</item>
+    </style>
+
+    <style name="TextView"></style>
+
+    <style name="TextView.XLarge">
+        <item name="android:textSize">18.0sp</item>
+    </style>
+
+    <style name="TextView.Large">
+        <item name="android:textSize">16.0sp</item>
+    </style>
+
+    <style name="TextView.Middle">
+        <item name="android:textSize">14.0sp</item>
+    </style>
+
+    <style name="TextView.Small">
+        <item name="android:textSize">12.0sp</item>
+    </style>
+
+    <style name="TextView.Tiny">
+        <item name="android:textSize">10.0sp</item>
+    </style>
+
+    
+
+    <style name="TextView.XLarge.White">
+        <item name="android:textColor">@color/white_text</item>
+    </style>
+
+    <style name="TextView.XLarge.DaryGray">
+        <item name="android:textColor">@color/dark_gray_text</item>
+    </style>
+
+    <style name="TextView.XLarge.TransDarkGray">
+        <item name="android:textColor">@color/dark_gray_translucence_text</item>
+    </style>
+
+    <style name="TextView.Large.White">
+        <item name="android:textColor">@color/white_text</item>
+    </style>
+
+    <style name="TextView.Large.TransWhite">
+        <item name="android:textColor">@color/white_translucence_text</item>
+    </style>
+
+    <style name="TextView.Large.DarkGray">
+        <item name="android:textColor">@color/dark_gray_text</item>
+    </style>
+
+    <style name="TextView.Title" parent="TextView.Large.White">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextView.Large.TransDarkGray">
+        <item name="android:textColor">@color/dark_gray_translucence_text</item>
+    </style>
+
+    <style name="TextView.Large.Gray">
+        <item name="android:textColor">@color/gray_text</item>
+    </style>
+
+    <style name="TextView.Middle.DarkGray">
+        <item name="android:textColor">@color/dark_gray_text</item>
+    </style>
+
+    <style name="TextView.Middle.White">
+        <item name="android:textColor">@color/white_text</item>
+    </style>
+
+    <style name="TextView.Middle.TransWhite">
+        <item name="android:textColor">@color/white_translucence_text</item>
+    </style>
+
+    <style name="TextView.Middle.Blue">
+        <item name="android:textColor">@color/blue_text</item>
+    </style>
+
+    <style name="TextView.Small.TransWhite">
+        <item name="android:textColor">@color/white_translucence_text</item>
+    </style>
+
+    <style name="TextView.Small.White">
+        <item name="android:textColor">@color/white_text</item>
+    </style>
+
+    <style name="TextView.Small.TransDarkGray">
+        <item name="android:textColor">@color/dark_gray_translucence_text</item>
+    </style>
+
+    <style name="TextView.Small.DarkGray">
+        <item name="android:textColor">@color/dark_gray_text</item>
+    </style>
+
+    <style name="TextView.Small.Blue">
+        <item name="android:textColor">@color/blue_text</item>
+    </style>
+
+    <style name="TextView.Tiny.White">
+        <item name="android:textColor">@color/white_text</item>
+    </style>
+
+    <style name="TextView.Tiny.TransWhite">
+        <item name="android:textColor">@color/white_translucence_text</item>
+    </style>
+
+    <style name="BlueCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/se_checkbox_blue</item>
+    </style>
+    
+    
+     <!-- From old player -->
+     <style name="CustomDialog" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    
+   
+	<style name="SpiltActionTheme" parent="@lewa:style/V5.Theme.Holo.Light">
+		<item name="lewa:windowActionBarBottomOverlay">true</item>
+	</style>
+</resources>

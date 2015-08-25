@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@id/tv_top_list"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height"
+        android:gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp"
+        style="@style/TextView.Large.TransWhite" />
+
+    <LinearLayout
+        android:id="@id/llo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:paddingLeft="15dp"
+        android:layout_toRightOf="@id/tv_top_list"
+        android:layout_toLeftOf="@id/bt_download">
+
+        <TextView
+            android:id="@id/tv_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|bottom"
+            style="@style/TextView.Large.White" />
+
+        <TextView
+            android:id="@id/tv_artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|top"
+            style="@style/TextView.Large.TransWhite" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@id/bt_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingRight="15dp"
+        android:focusable="false"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/se_btn_download_small"
+        android:background="@android:color/transparent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lv_long_divider" />
+
+</RelativeLayout>

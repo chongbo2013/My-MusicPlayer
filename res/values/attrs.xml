@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RecyclingMaskImageView">
+        <!-- Identifier for the image that represents the Imageview's content. -->
+        <attr name="rotation" format="integer" />
+        <!-- crop Imageview's content same as mask -->
+        <attr name="maskDrawables" format="reference" />
+
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="round_background" format="boolean" />
+        <attr name="is_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <declare-styleable name="MaskEndListView">
+        <attr name="lv_header_mask" format="reference" />
+        <attr name="lv_header_mask_height" format="dimension" />
+        <attr name="lv_footer_mask" format="reference" />
+        <attr name="lv_footer_mask_height" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MaskEndGridView">
+        <attr name="gv_header_mask" format="reference" />
+        <attr name="gv_header_mask_height" format="dimension" />
+        <attr name="gv_footer_mask" format="reference" />
+        <attr name="gv_footer_mask_height" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="MaskImageView">
+        <attr name="layout_size" format="dimension" />
+        <attr name="size" format="float" />
+        <attr name="mask_color" format="color" />
+    </declare-styleable>
+
+</resources>

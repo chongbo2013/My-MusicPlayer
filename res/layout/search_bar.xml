@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <View
+        android:id="@id/llo1"
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <!--<ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/magnifier"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"/> -->
+
+        <com.lewa.view.ClearEditText
+            android:id="@id/et_search"
+            android:layout_width="fill_parent"
+            android:layout_height="51dp"
+            android:paddingLeft="40dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/se_et_search"
+            android:imeOptions="actionSearch"
+            android:textCursorDrawable="@drawable/sv_cursor"
+            android:singleLine="true"
+            android:textSize="15.0dip" />
+
+    </RelativeLayout>
+
+</LinearLayout>

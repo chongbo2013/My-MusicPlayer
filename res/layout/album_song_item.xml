@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_height"
+    android:paddingLeft="15dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:id="@id/llo1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/bt_download"
+        android:layout_alignParentLeft="true">
+
+        <TextView
+            android:id="@id/tv_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|bottom"
+            android:ellipsize="end"
+            android:singleLine="true"
+            style="@style/TextView.Large.White"
+             />
+		<FrameLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/tv_song_name"
+		    >
+        
+	        <TextView
+	            android:id="@id/tv_song_duration"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:gravity="left|top"
+	            style="@style/TextView.Large.TransWhite" 
+	            />
+	          <LinearLayout 
+	                android:id="@+id/progress_ll"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent"
+		            android:gravity="center_vertical"
+		            android:visibility="gone"
+		            >
+			        <ProgressBar
+			            android:id="@+id/download_progress" 
+			            android:layout_width="0dp"
+			            android:layout_height="wrap_content"
+			            style="?android:attr/progressBarStyleHorizontal"
+			            android:max="100"
+			            android:layout_weight="1"
+			            />
+		       	   <TextView 
+		            android:id="@+id/progress_text"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:textSize="12dp"
+		            android:layout_marginLeft="5dp"
+		            />
+		      
+		        </LinearLayout>
+		        
+	        
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@id/bt_download"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/se_btn_download_small"
+        android:background="@android:color/transparent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lv_long_divider" />
+
+</RelativeLayout>

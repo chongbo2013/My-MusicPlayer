@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@id/song_synchronize"
+        android:title="@string/song_synchronize"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@id/sleep_mode"
+        android:title="@string/sleep_mode"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@id/music_settings"
+        android:title="@string/music_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@id/exit"
+        android:title="@string/exit"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+</menu>

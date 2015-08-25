@@ -1,0 +1,12 @@
+<resources>
+
+    <dimen name="play_view_padding_top">175dp</dimen>
+    <dimen name="play_view_btn_spacing">25dp</dimen>
+    <dimen name="artist_name_padding_bottom">5dp</dimen>
+    <dimen name="bottom_btn_spacing">60dp</dimen>
+    <dimen name="edit_view_padding_bottom">66dp</dimen>
+
+    <dimen name="play_list_header_height">180dp</dimen>
+    <dimen name="mask_image_view_size">225dp</dimen>
+
+</resources>

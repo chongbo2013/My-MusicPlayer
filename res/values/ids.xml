@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="arraw_id" type="id" />
+    <item name="llo1" type="id" />
+    <item name="llo2" type="id" />
+    <item name="llo3" type="id" />
+    <item name="llo4" type="id" />
+    <item name="rlo1" type="id" />
+    <item name="rlo2" type="id" />
+    <item name="rlo3" type="id" />
+    <item name="rlo4" type="id" />
+    <item name="pb" type="id" />
+    <item name="vp" type="id" />
+    <item name="iv" type="id" />
+    <item name="button" type="id" />
+    <item name="seekbar" type="id" />
+    <item name="progressbar" type="id" />
+    <item name="gv" type="id" />
+    <item name="sidebar" type="id" />
+    <item name="dialog" type="id" />
+    <item name="view_hold" type="id" />
+    <item name="view_hold_stats" type="id" />
+    <item name="rl_playlist" type="id" />
+    <item name="rl_play" type="id" />
+    <item name="song_synchronize" type="id" />
+    <item name="song_hound" type="id" />
+    <item name="sleep_mode" type="id" />
+    <item name="music_settings" type="id" />
+    <item name="exit" type="id" />
+    <item name="container" type="id" />
+    <item name="summary" type="id" />
+    <item name="widget_frame" type="id" />
+    <item name="v_touch" type="id" />
+    <item name="v_touch_transpant" type="id" />
+
+    <item name="vp_popup" type="id" />
+    <item name="vp_fragment" type="id" />
+    <item name="vp_playlist" type="id" />
+
+    <item name="bt_playlist" type="id" />
+    <item name="bt_library" type="id" />
+    <item name="bt_home" type="id" />
+    <item name="bt_pause" type="id" />
+    <item name="bt_play" type="id" />
+    <item name="bt_playlist_play" type="id" />
+    <item name="bt_previous" type="id" />
+    <item name="bt_next" type="id" />
+    <item name="bt_artist" type="id" />
+    <item name="bt_cover" type="id" />
+    <item name="bt_more" type="id" />
+    <item name="bt_play_mode" type="id" />
+    <item name="bt_favorite" type="id" />
+    <item name="bt_recognize" type="id" />
+    <item name="bt_download" type="id" />
+    <item name="bt_back" type="id" />
+    <item name="bt_hound_histoy" type="id" />
+    <item name="bt_hound" type="id" />
+    <item name="bt_lyric" type="id" />
+    <item name="iv_search" type="id" />
+    <item name="bt_moudle" type="id" />
+    <item name="bt_voice" type="id" />
+    <item name="bt_show_all_songs" type="id" />
+    <item name="bt_create" type="id" />
+    <item name="bt_done" type="id" />
+    <item name="bt_add_cover" type="id" />
+    <item name="bt_downloadall" type="id" />
+    <item name="bt_add_to_list" type="id" />
+    <item name="bt_as_bell" type="id" />
+    <item name="bt_edit" type="id" />
+    <item name="bt_scan" type="id" />
+    <item name="tag_index" type="id" />
+
+    <item name="lo_switchs" type="id" />
+    <item name="lo_secondary_controls" type="id" />
+    <item name="lo_more" type="id" />
+    <item name="lo_undownload_edit" type="id" />
+    <item name="lo_download_edit" type="id" />
+    <item name="lo_mask" type="id" />
+    <item name="lo_mini_cover" type="id" />
+    <item name="lo_playlist" type="id" />
+    <item name="lo_copyright" type="id" />
+    <item name="lo_library_trigger" type="id" />
+
+    <item name="l_first_page_container" type="id" />
+    <item name="l_secondary_page_container" type="id" />
+    <item name="l_third_page_container" type="id" />
+    <item name="l_fourth_page_container" type="id" />
+    <item name="l_fifth_page_container" type="id" />
+    <item name="l_play" type="id" />
+    <item name="l_playlist" type="id" />
+    <item name="l_cover" type="id" />
+    <item name="bt_library_in_playlist" type="id" />
+    <item name="bt_create_playlist" type="id" />
+    <item name="bt_add_song" type="id" />
+    <item name="bt_select_all" type="id" />
+    <item name="bt_edit_playlist" type="id" />
+    <item name="bt_add_to" type="id" />
+    <item name="bt_share" type="id" />
+    <item name="bt_remove" type="id" />
+    <item name="bt_remove_song" type="id" />
+
+
+    <item name="tv_song_name" type="id" />
+    <item name="tv_song_name2" type="id" />
+    <item name="tv_playlist_name" type="id" />
+    <item name="tv_artist_name" type="id" />
+    <item name="tv_label" type="id" />
+    <item name="tv_prompt" type="id" />
+    <item name="tv_album_name" type="id" />
+    <item name="tv_song_duration" type="id" />
+    <item name="tv_play_position" type="id" />
+    <item name="tv_track_name" type="id" />
+    <item name="tv_update_time" type="id" />
+    <item name="tv_top_list_name" type="id" />
+    <item name="tv_top_list" type="id" />
+    <item name="tv_title" type="id" />
+    <item name="tv_number" type="id" />
+    <item name="tv_remove_song" type="id" />
+    <item name="tv_nolrc" type="id" />
+    <item name="tv_artist_name_label" type="id" />
+    <item name="tv_song_name_label" type="id" />
+    <item name="tv_album_name_label" type="id" />
+    <item name="bt_lyric_sentence" type="id" />
+    <item name="bt_focused_lyric_sentence" type="id" />
+
+    <item name="tag_view_holder" type="id" />
+    <item name="tag_vid" type="id" />
+    <item name="tag_type" type="id" />
+    <item name="tag_entity" type="id" />
+
+    <item name="iv_parallax" type="id" />
+    <item name="iv_lrc" type="id" />
+    <item name="iv_cover" type="id" />
+    <item name="iv_origin_cover" type="id" />
+    <item name="iv_mini_cover" type="id" />
+    <item name="iv_play_btn" type="id" />
+    <item name="iv_artist" type="id" />
+    <item name="iv_album" type="id" />
+    <item name="iv_album_cover" type="id" />
+    <item name="iv_popup_arrow" type="id" />
+    <item name="iv_now_playing_icon" type="id" />
+    <item name="iv_jumpy" type="id" />
+    <item name="iv_highlight" type="id" />
+
+    <item name="lv" type="id" />
+    <item name="lv_song" type="id" />
+    <item name="lv_artist" type="id" />
+    <item name="lv_song_history" type="id" />
+    <item name="lv_album" type="id" />
+    <item name="lv_track" type="id" />
+    <item name="lv_top_list" type="id" />
+    <item name="lv_search" type="id" />
+    <item name="lv_lyric" type="id" />
+    <item name="iv_blurred" type="id" />
+    <item name="iv_full_blurred" type="id" />
+
+    <item name="l_view_group" type="id" />
+
+    <item name="et_search" type="id" />
+    <item name="et_name" type="id" />
+    <item name="et_song_name" type="id" />
+    <item name="et_artist_name" type="id" />
+    <item name="et_album_name" type="id" />
+
+    <item name="cb_select" type="id" />
+
+    <!-- from lewa -->
+    <item name="player_status" type="id" />
+    <item name="status_cover" type="id" />
+    <item name="status_btn_next" type="id" />
+    <item name="status_btn_pause" type="id" />
+    <item name="status_song" type="id" />
+    <item name="status_artist" type="id" />
+    <item name="text_no_songs" type="id" />
+    <item name="action_mode_right_button" type="id" />
+    <item name="bt_hotknot" type="id" />
+
+</resources>

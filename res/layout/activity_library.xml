@@ -1,0 +1,282 @@
+<FrameLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="MergeRootFrame">
+    
+    <!-- library activity background -->
+    <ImageView
+        android:id="@id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover_background" />
+
+    <!-- library activity background mask-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/d_bg_gradient_white_60_100"        
+        /> 
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="top">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/library_header_height"
+            android:layout_gravity="center_horizontal|top"
+            android:background="@android:color/transparent">
+
+            <ImageButton
+                android:id="@+id/setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"               
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/se_btn_setting"
+                android:background="@android:color/transparent"
+                />
+                <!-- android:layout_marginLeft="@dimen/list_padding" -->
+
+            <ImageButton
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"               
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/se_btn_search"
+                android:background="@android:color/transparent"
+                />
+
+            <TextView
+                android:id="@id/tv_label"
+                style="@style/TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="34dp"
+                android:layout_marginBottom="@dimen/library_header_height_margin"
+                 
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true" />
+
+            <LinearLayout
+                android:id="@id/l_view_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tv_label"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/indicator_iv_size"
+                    android:layout_height="@dimen/indicator_iv_size"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/greypoint" />
+
+                <ImageView
+                    android:layout_width="@dimen/indicator_iv_size"
+                    android:layout_height="@dimen/indicator_iv_size"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/greypoint" />
+
+                <ImageView
+                    android:layout_width="@dimen/indicator_iv_size"
+                    android:layout_height="@dimen/indicator_iv_size"
+                    android:layout_marginRight="4dp"
+                    android:background="@drawable/greypoint" />
+
+                <ImageView
+                    android:layout_width="@dimen/indicator_iv_size"
+                    android:layout_height="@dimen/indicator_iv_size"
+                    android:background="@drawable/greypoint" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@id/vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/item_height"
+            android:layout_gravity="center"
+            android:clipChildren="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@id/l_secondary_page_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@id/l_third_page_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@id/l_fourth_page_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:visibility="gone"/>
+    
+    <LinearLayout
+        android:id="@+id/song_info_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:visibility="gone"/>
+
+
+    <!-- bottom miniplayer panel start -->
+
+
+    <RelativeLayout       
+        android:id="@id/llo1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@drawable/bottom_panel_bg"            
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <!--<FrameLayout
+            android:id="@id/lo_mini_cover"
+            android:layout_width="@dimen/mini_cover_frame_size"
+            android:layout_height="@dimen/mini_cover_frame_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="@dimen/list_padding"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center"
+            > -->
+
+        <com.lewa.view.MaskImage.MaskImageView
+            android:id="@id/iv_mini_cover"
+            android:layout_width="@dimen/mini_cover_frame_size"
+            android:layout_height="@dimen/mini_cover_frame_size"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/list_padding"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cover"
+            app:layout_size="@dimen/mini_cover_size" />
+
+        <!--</FrameLayout> -->
+
+        <ImageButton
+            android:id="@id/bt_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/item_right_padding_size"
+            android:src="@drawable/se_btn_next_small"
+            android:background="@android:color/transparent" />
+
+
+         <ImageButton
+            android:id="@id/bt_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@id/bt_next"
+            android:src="@drawable/se_btn_play_small"
+            android:background="@android:color/transparent" />
+
+
+         <TextView
+            android:id="@id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/bt_play"
+            android:layout_toRightOf="@id/iv_mini_cover"
+            android:layout_marginTop="@dimen/item_title_top_dim"
+            android:layout_marginLeft="@dimen/item_title_img_space"
+            android:layout_marginRight="15dp"     
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginBottom="@dimen/itme_title_sub_space"
+            android:textSize="@dimen/item_title_text_size"
+            style="@style/TextView.Middle.White" 
+            />
+
+          <TextView
+            android:id="@+id/artist_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/bt_play"
+            android:layout_toRightOf="@id/iv_mini_cover"
+            android:layout_below="@id/tv_title"
+            android:layout_marginLeft="@dimen/item_title_img_space"
+            android:layout_marginRight="15dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            style="@style/TextView.Small.TransWhite"
+            android:textSize="@dimen/item_sub_text_size"
+            />
+
+    </RelativeLayout>
+
+    <!-- bottom miniplayer panel end -->
+
+
+    <!-- new version palyer not use start 2014/09/25 -->
+    <!--<LinearLayout
+        android:id="@id/llo2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="97dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@id/iv_popup_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selectpoint" />
+
+        <com.lewa.view.HorizontalHideListView
+            android:id="@id/lv_song"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/black_a_80"
+            android:divider="@null"
+            android:scrollbars="none"
+            android:fadingEdge="none" />
+
+    </LinearLayout> -->
+    <!-- new version palyer not use end-->
+
+    <LinearLayout
+        android:id="@id/l_fifth_page_container"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:visibility="gone"/>
+
+</FrameLayout>

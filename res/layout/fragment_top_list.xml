@@ -1,0 +1,73 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlbumListActivity$PlaceholderFragment">
+
+    <ImageView
+        android:id="@id/iv_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cover_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/d_bg_gradient_white_60_100"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="50dp"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/status_bar_height">
+
+        <RelativeLayout
+            android:id="@id/llo1"
+            style="@style/ActionBar"
+            android:layout_alignParentTop="true">
+
+            <ImageButton
+                android:id="@id/bt_back"
+                android:layout_width="@dimen/actionbar_height"
+                android:layout_height="@dimen/actionbar_height"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                
+                android:background="@drawable/se_action_back" />
+
+            <TextView
+                style="@style/TextView.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="@string/top_list" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@drawable/ab_solid_shadow_holo" />
+
+        <com.lewa.view.MaskEndListView
+            android:id="@id/lv_top_list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.0"
+            android:scrollbars="none"
+            android:fadingEdge="none"
+            android:divider="@null"
+            android:layout_gravity="center"
+            app:lv_header_mask="@drawable/start_mask"
+            app:lv_header_mask_height="@dimen/header_mask_height"
+            app:lv_footer_mask="@drawable/end_mask"
+            app:lv_footer_mask_height="@dimen/footer_mask_height" />
+
+    </LinearLayout>
+
+</FrameLayout>

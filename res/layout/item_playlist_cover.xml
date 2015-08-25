@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/lo_playlist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true">
+
+    <LinearLayout
+        android:id="@id/llo1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:clickable="false">
+
+        <com.lewa.view.MaskImage.MaskImageView
+            android:id="@id/iv"
+            android:layout_width="@dimen/playlist_cover_small_size"
+            android:layout_height="@dimen/playlist_cover_small_size"
+            android:scaleType="centerCrop"
+            android:src="@drawable/cover"
+            android:background="@drawable/bg_cover_shadow_200"
+            app:layout_size="@dimen/playlist_cover_small_size"
+            android:clickable="false" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/iv_highlight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/highlight_450"
+        android:visibility="gone"
+        android:clickable="false" />
+
+    <LinearLayout
+        android:id="@id/llo2"
+        android:layout_width="@dimen/playlist_cover_large_size"
+        android:layout_height="@dimen/playlist_cover_large_size"
+        android:descendantFocusability="blocksDescendants"
+        android:clickable="false"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageButton
+            android:id="@id/bt_playlist_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:src="@drawable/se_btn_play"
+            android:background="@android:color/transparent"
+            android:duplicateParentState="true"
+            android:clickable="false" />
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,77 @@
+<resources>
+
+	<dimen name="appwidget_min_1_titl">17px</dimen>
+    <dimen name="appwidget_min_1_sub_tilte">13px</dimen>
+    <dimen name="appwidget_min_1_time">10px</dimen>
+
+    <!--<dimen name="appwidget_min_3_titl">19px</dimen>
+    <dimen name="appwidget_min_3_sub_tilte">12px</dimen>
+    <dimen name="appwidget_min_3_time">10px</dimen>
+    <dimen name="appwidget_min_3_lyr_pre">14px</dimen>
+    <dimen name="appwidget_min_3_lyr_cur">17px</dimen>
+    <dimen name="appwidget_min_3_lyr_next">14px</dimen>-->
+	<dimen name="appwidget_min_3_titl">21px</dimen>
+    <dimen name="appwidget_min_3_sub_tilte">13px</dimen>
+    <dimen name="appwidget_min_3_time">11px</dimen>
+    <dimen name="appwidget_min_3_lyr_pre">19px</dimen>
+    <dimen name="appwidget_min_3_lyr_cur">21px</dimen>
+    <dimen name="appwidget_min_3_lyr_next">19px</dimen>
+
+    <dimen name="appwidget_min_3_title_top_s">14dp</dimen>
+    <dimen name="appwidget_min_3_lyr_ctl_h">14dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="page_margin">17.5dp</dimen>
+    <dimen name="pager_margin">45dp</dimen>
+    <dimen name="land_pager_margin">35dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_60">60dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="sp_16">16sp</dimen>
+    <dimen name="search_view_margin_left">55dp</dimen>
+
+    <dimen name="playlist_cover_large_size">169dp</dimen>
+    <dimen name="playlist_cover_small_size">120dp</dimen>
+
+    <dimen name="appwidget_min_width">294dp</dimen>
+    <dimen name="appwidget_min_1_height">72dp</dimen>
+    <dimen name="appwidget_min_3_height">220dp</dimen>
+
+    <dimen name="song_cover_size">70dp</dimen>
+    <dimen name="playlist_cover_size">68dp</dimen>
+    <dimen name="mini_cover_frame_size">55dp</dimen>
+
+    <!--    from native -->
+    <!-- height of a normal list item in edit playlist mode -->
+    <dimen name="normal_height">66dip</dimen>
+    <!-- height of an expanded list item in edit playlist mode -->
+    <dimen name="expanded_height">132dip</dimen>
+    <dimen name="header_mask_height">10dp</dimen>
+    <dimen name="footer_mask_height">40dp</dimen>
+
+    <!--  from lewa  -->
+    <dimen name="lrc_text_size">16sp</dimen>
+    <dimen name="lrc_current_text_size">16dip</dimen>
+    <dimen name="lrc_text_height">26dip</dimen>
+    <dimen name="lrc_speed_scroll">26dip</dimen>
+    <dimen name="eq_vertical_seekbar_height">32dip</dimen>
+    
+    <dimen name="eq_vertical_seekbar_width">250dip</dimen>
+    <dimen name="no_songs_padding_top">30dip</dimen>
+    <dimen name="now_playing_bar_width">480px</dimen>
+
+    <dimen name="play_view_padding_top">113dp</dimen>
+    <dimen name="play_view_btn_spacing">25dp</dimen>
+    <dimen name="artist_name_padding_bottom">4dp</dimen>
+    <dimen name="play_seekbar_with">230dp</dimen>
+    <dimen name="seekbar_padding_bottom">118dp</dimen>
+    <dimen name="bottom_btn_spacing">45dp</dimen>
+    <dimen name="edit_view_padding_bottom">75dp</dimen>
+
+    <dimen name="play_list_header_height">135dp</dimen>
+    <dimen name="mask_image_view_size">169dp</dimen>
+
+</resources>

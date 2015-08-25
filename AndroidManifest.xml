@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lewa.player"
+    android:versionCode="1"
+    android:versionName="1.0"
+    >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_FRAME_BUFFER" />
+    <uses-permission android:name="android.permission.HOTKNOT" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <application
+        android:name="com.lewa.ExitApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_music"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:allowTaskReparenting="true"
+        >
+
+        <receiver
+            android:name="com.lewa.player.MediaButtonIntentReceiver"
+            android:permission="lewa.permission.ACTION_MEDIA_BUTTON" >
+            <intent-filter >
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <!-- <action android:name="android.media.AUDIO_BECOMING_NOISY" /> -->
+                <action android:name="com.lewa.lockscreen.control" />
+                <action android:name="com.lewa.tuningmaster.PLAY_REQUEST_STATUS" />
+            </intent-filter>
+        </receiver>
+
+      <receiver android:name=".widget.Widget4x1">
+            <intent-filter>                
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="com.lewa.player.widget.4x1" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_4x1"></meta-data>
+        </receiver>
+        
+      <receiver android:name=".widget.Widget4x3">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"></action>
+                <action android:name="android.appwidget.action.APPWIDGET_DELETED" />
+                <action android:name="android.appwidget.action.APPWIDGET_DISABLED" />
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="android.intent.action.LOCALE_CHANGED" />
+                <action android:name="com.lewa.player.UpdateLRC" />
+                <action android:name="com.lewa.player.widget.4x3"></action>
+               
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_4x3"></meta-data>
+        </receiver>
+
+        <!--this activity can`t be deleted  bug : 64446 -->
+        <activity
+            android:name=".activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/V5NoAnimTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.LibraryActivity"
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/V5NoAnimTheme"           
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.PlayActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/TransparentTheme"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="com.lewa.player.PLAY_VIEWER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ArtistAlbumListActivity"
+            android:label="@string/title_activity_library"
+            android:theme="@style/V5NoAnimTheme"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.SongHoundActivity"
+            android:label="@string/title_activity_song_hound"
+            
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.HoundHistoryActivity"
+            android:label="@string/title_activity_song_hound_history"
+            
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.EditPlaylistActivity"
+            android:launchMode="standard"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:theme="@style/V5NoAnimTheme"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.SettingActivity"
+            
+            android:theme="@style/V5AnimTheme"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.SelectFolderActivity"
+            android:theme="@style/Theme.FileManagerV5StyleNew"
+            android:uiOptions="splitActionBarWhenNarrow"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".activity.MusicEQActivity"
+            
+            android:theme="@style/V5AnimTheme"
+            android:screenOrientation="portrait"></activity>
+            
+        
+		<service android:name=".ScanFileService"
+		    android:exported="false"> </service>
+
+        <service
+            android:name=".MediaPlaybackService"
+            android:exported="false" />
+
+        <!--<receiver android:name=".MediaAppWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_info" />
+        </receiver> -->
+         <provider android:name=".LockScreenProvider" android:authorities="com.lewa.player" android:exported="true"></provider>
+         
+         <!-- From old player begin-->
+         <activity
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:name=".AudioPreview"
+            android:taskAffinity=""
+            android:theme="@style/CustomDialog" >
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="file" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+            <intent-filter >
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="http" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="content" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:exported="true"
+            android:label="@string/music_picker_title"
+            android:name=".MusicPicker"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.FileManagerV5StyleNew" >
+
+            <!--
+                 First way to invoke us: someone asks to get content of
+                 any of the audio types we support.
+            -->
+            <intent-filter >
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/x-flac" />
+            </intent-filter>
+            <!--
+                 Second way to invoke us: someone asks to pick an item from
+                 some media Uri.
+            -->
+            <intent-filter >
+                <action android:name="android.intent.action.PICK" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.OPENABLE" />
+
+                <data android:mimeType="vnd.android.cursor.dir/audio" />
+            </intent-filter>
+        </activity>
+        
+        <receiver android:name="com.lewa.player.BootCompletedReceiver" >
+	        <intent-filter >
+	            <action android:name="android.intent.action.BOOT_COMPLETED"/>
+	        </intent-filter>    
+        </receiver>
+        
+        
+	</application>
+
+</manifest>

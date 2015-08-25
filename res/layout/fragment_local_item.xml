@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"   
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"    
+    android:paddingLeft="@dimen/list_padding"
+    android:paddingRight="@dimen/list_padding"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@id/llo1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_title_top_dim"
+            >
+            
+             <TextView
+                android:id="@id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/TextView.Middle.White" 
+                android:textSize="@dimen/item_title_text_size"
+                android:singleLine="true"
+                android:ellipsize="end"
+                />
+
+             <ImageView
+                android:id="@id/iv_now_playing_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="3dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/playing_anim"
+                android:visibility="invisible" 
+                /> 
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/itme_title_sub_space"
+            android:paddingRight="@dimen/list_padding"
+            >
+
+            <TextView
+                android:id="@+id/tv_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"	                    
+                style="@style/TextView.Small.TransWhite" 
+                android:textSize="@dimen/item_sub_text_size"/>
+
+            <TextView
+                android:id="@+id/tv_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                style="@style/TextView.Small.TransWhite"
+                android:textSize="@dimen/item_sub_text_size"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lv_divider" />
+
+
+</RelativeLayout>

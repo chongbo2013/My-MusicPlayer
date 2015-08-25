@@ -1,0 +1,59 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <com.lewa.view.MaskEndListView
+                android:id="@id/lv"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:scrollbars="none"
+                android:fadingEdge="none"
+                android:divider="@null"
+                android:layout_gravity="center"
+                app:lv_header_mask="@drawable/start_mask"
+                app:lv_header_mask_height="@dimen/header_mask_height"
+                app:lv_footer_mask="@drawable/end_mask"
+                app:lv_footer_mask_height="@dimen/footer_mask_height" />
+
+        </LinearLayout>
+
+        <!--<TextView
+            android:id="@id/dialog"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="32sp"
+            android:textColor="?android:attr/textColorPrimaryInverse"
+            android:background="@android:color/holo_blue_light"
+            android:visibility="gone" />
+
+        <com.lewa.view.SideBar
+            android:id="@id/sidebar"
+            android:layout_width="20dp"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            
+            android:layout_gravity="right|center"  />
+            -->
+        <com.lewa.view.ABCFastIndexer
+        	android:id="@+id/fast_indexer"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"       	
+        	android:visibility="visible"/>
+    </FrameLayout>
+
+</FrameLayout>

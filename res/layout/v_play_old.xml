@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent">
+
+        <ImageButton
+            android:id="@id/bt_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:src="@drawable/se_btn_library"
+            android:background="@android:color/transparent" />
+
+        <LinearLayout
+            android:id="@id/llo1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="250dp">
+
+            <ImageButton
+                android:id="@id/bt_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/se_btn_previous"
+                android:background="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@id/bt_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
+                android:src="@drawable/se_btn_play"
+                android:background="@android:color/transparent" />
+
+            <ImageButton
+                android:id="@id/bt_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/se_btn_next"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llo1"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_playlist_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@id/tv_playlist_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/lo_secondary_controls"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:alpha="66" />
+
+            <LinearLayout
+                android:id="@id/lo_secondary_controls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/lo_more"
+                android:gravity="center_horizontal|bottom"
+                android:layout_marginBottom="70dp">
+
+                <ImageButton
+                    android:id="@id/bt_play_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/se_btn_loop"
+                    android:background="@android:color/transparent" />
+
+                <SeekBar
+                    android:id="@id/seekbar"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="30dp"
+                    android:maxHeight="30dp"
+                    android:progressDrawable="@drawable/d_progressbar"
+                    android:thumb="@drawable/se_btn_seekbar_thumb"
+                    android:progress="0"
+                    android:indeterminate="false" />
+
+                <ImageButton
+                    android:id="@id/bt_favorite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/se_btn_favorite"
+                    android:layout_toRightOf="@id/bt_play_mode"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@id/lo_more"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal|bottom">
+
+                <ImageButton
+                    android:id="@id/bt_artist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="45dp"
+                    android:src="@drawable/se_btn_artist"
+                    android:background="@android:color/transparent" />
+
+                <ImageButton
+                    android:id="@id/bt_cover"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="45dp"
+                    android:src="@drawable/se_btn_cover"
+                    android:background="@android:color/transparent" />
+
+                <ImageButton
+                    android:id="@id/bt_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/se_btn_more"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

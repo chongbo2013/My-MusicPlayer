@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/rl_playlist"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:visibility="gone">
+
+    <RelativeLayout
+        android:id="@id/rlo1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/play_list_header_height"
+        android:layout_alignParentTop="true">
+
+        <ImageButton
+            android:id="@id/bt_library_in_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/status_bar_height"
+            android:src="@drawable/se_btn_library"
+            android:visibility="gone"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@id/tv_playlist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/llo1"
+        android:layout_below="@id/rlo1">
+
+        <RelativeLayout
+            android:id="@id/rlo2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:layerType="software">
+
+            <android.support.v4.view.ViewPager
+                android:id="@id/vp_playlist"
+                android:layout_width="@dimen/playlist_cover_large_size"
+                android:layout_height="@dimen/playlist_cover_large_size"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:clipChildren="false" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/tv_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/rlo2"
+            android:layout_marginTop="15dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@id/llo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="bottom|center_horizontal"
+        android:paddingBottom="15dp">
+
+        <ImageButton
+            android:id="@id/bt_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/se_btn_home"
+            android:background="@android:color/transparent" />
+    </LinearLayout>
+
+</RelativeLayout>

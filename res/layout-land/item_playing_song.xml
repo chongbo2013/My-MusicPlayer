@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:paddingRight="35dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@id/iv_now_playing_icon"
+        android:layout_width="35dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/nowplaying"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@id/llo1"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="35dp"
+        android:layout_toLeftOf="@id/bt_download">
+
+        <TextView
+            android:id="@id/tv_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            style="@style/TextView.Middle.White" />
+
+        <TextView
+            android:id="@id/tv_artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left|center_vertical"
+            style="@style/TextView.Small.TransWhite" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@id/bt_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/se_btn_download_small"
+        android:background="@android:color/transparent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="35dp"
+        android:background="@color/lv_long_divider" />
+
+</RelativeLayout>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/list_padding"
+    android:paddingRight="35dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@id/llo1"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height"
+        android:orientation="vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/bt_download">
+
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_title_top_dim"
+            >
+            
+            <TextView
+                android:id="@id/tv_song_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextView.Middle.White" 
+                android:textSize="@dimen/item_title_text_size"
+                />
+
+            <ImageView 
+                android:id="@id/iv_now_playing_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_song_name"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="3dp"
+                android:layout_alignBottom="@id/tv_song_name"
+                android:gravity="center"
+                android:background="@drawable/playing_anim"
+                android:visibility="invisible" 
+                /> 
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/tv_artist_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/itme_title_sub_space"
+            android:gravity="left|center_vertical"
+            style="@style/TextView.Small.TransWhite" 
+            android:textSize="@dimen/item_sub_text_size"/>
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@id/bt_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/se_btn_download_small"
+        android:background="@android:color/transparent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lv_long_divider" />
+
+</RelativeLayout>

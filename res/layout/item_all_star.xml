@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/llo1"
+    android:orientation="vertical"
+    android:layout_width="100dp"
+    android:layout_height="120dp"
+    android:gravity="center">
+
+    <FrameLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_cover_shadow_200"
+            android:gravity="center">
+
+            <com.lewa.view.MaskImage.MaskImageView
+                android:id="@id/iv"
+                android:layout_width="@dimen/playlist_cover_size"
+                android:layout_height="@dimen/playlist_cover_size"
+                android:scaleType="fitXY"
+                app:layout_size="@dimen/playlist_cover_size"
+                android:src="@drawable/cover"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@id/tv_title"
+        style="@style/TextView.Middle.DarkGray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="center_horizontal|top" />
+
+</LinearLayout>

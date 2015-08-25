@@ -1,0 +1,401 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<string name="song_name_null_hint">歌曲名字不能爲空</string>
+	<string name="artist_name_null_hint">歌手名字不能爲空</string>
+	
+	<string name="limit_hint_text">已經達到輸入上限</string>
+	<string name="search_text_hint">歌曲、專輯、藝人</string>
+	<string name="favorite_remove_successfully_toast_text">取消收藏</string>
+	<string name="song_add_to"><xliff:g id="name">%s</xliff:g> 已加入 <xliff:g id="name">%s</xliff:g></string>
+	<string name="song_number_postfix">首歌曲</string>
+	<string name="setting_general">常用設置</string>
+	<string name="mine_my_favorite">我的收藏</string>
+    <string name="mine_recent_play">最近播放</string>
+    <string name="mine_my_download">我的下載</string>
+		<string name="share_title">分享給好友</string>
+	<string name="share_content">我在樂蛙音樂播放器中發現一首很好聽的歌，讓我們一起來欣賞吧！ \n <xliff:g id="app_name">%1$s</xliff:g>  \n <xliff:g id="app_url">%2$s</xliff:g></string>
+
+	<string name="text_album_num">%1$d 專輯</string>
+	<string name="nosdcard_title">您未裝載SD卡</string>
+	<string name="nousb_title">SD卡已掛載</string>
+  <string name="Hearing_loss">若要降低聽力損傷風險，不要長時間以高音量收聽</string>
+  <string name="app_name">音樂</string>
+  <string name="action_settings">設置</string>
+  <string name="title_activity_play">PlayActivity</string>
+  <string name="title_activity_library">LibraryActivity</string>
+  <string name="title_activity_song_hound">SongHoundActivity</string>
+  <string name="title_activity_song_hound_history">HoundHistoryActivity</string>
+  <string name="text_search_hint">搜索</string>
+  <string name="text_all_songs">所有歌曲</string>
+  <string name="create_playlist">創建歌單</string>
+  <string name="top_list">排行榜</string>
+  <string name="text_song_num">%1$d首歌</string>
+  <string name="edit_playlist_success_toast_text">%1$d首歌已添加到%2$s</string>
+  <string name="remove_playlistsong_success_toast_text">%1$d首歌已從%2$s中移除</string>
+  <string name="check_song_number">已選擇%1$d個</string>
+  <string name="btn_show_all_albums_text">顯示完整專輯</string>
+  <string name="title_cover_dialog">列表封面</string>
+  <string name="common_msg_nosdcard">找不到sdcard</string>
+  <string name="common_msg_get_photo_failure">獲取圖片失敗</string>
+  <string name="common_msg_get_not_image_file">不能選擇非圖片格式的檔作為歌單封面</string>
+  <string name="photoPickerNotFoundText">手機上沒有照片。</string>
+  <string name="remove_song_text">移除歌曲</string>
+  <string name="remove_song_file_text">刪除歌曲</string>
+  <string name="remove_song_prompt_text">確定移除所選歌曲？</string>
+  <string name="item_modify_text">編輯</string>
+  <string name="item_remove_text">刪除</string>
+  <string name="remove_dialog_message_text">歌單刪除後將無法恢復，確定刪除歌單？</string>
+  <string name="favorite_successfully_toast_text">歌曲收藏成功！</string>
+  <string name="rename_playlist_same_prompt">歌曲收藏成功！</string>
+  <string name="traffic_tip_text">流量提示</string>
+  <string name="traffic_tip_message_text">您現在處於移動網絡環境下，繼續收聽將消耗流量。</string>
+  <string name="continue_play_text">繼續收聽</string>
+  <string name="cancel_cn_text">取消</string>
+  <string name="ok_cn_text">確定</string>
+  <string name="no_artist_album_text">該歌手本地沒有對應的專輯</string>
+  <string name="no_sdcard_title_text">沒找到SD卡</string>
+  <string name="no_sdcard_message_text">請插入SD卡後重試</string>
+  <string name="text_all_local_songs">所有本地音樂</string>
+  <string name="playlist_dialog_title">編輯歌單</string>
+  <string name="remove_playlist_title">刪除播放列表</string>
+  <string name="cancel_text">取消</string>
+  <string name="ok_text">確定</string>
+  <string name="edit_song_text">編輯歌曲資訊</string>
+  <string name="new_songs_list">新歌榜</string>
+  <string name="hot_songs_list">熱歌榜</string>
+  <string name="edit_playlist">編輯歌單</string>
+  <string name="text_song_hound_title">識別歌曲</string>
+  <string name="btn_create_track_text">新建歌單</string>
+  <string name="text_playlist_cover">歌單封面</string>
+  <string name="hint_playlist_name">歌單名稱</string>
+  <string name="default_playlist_name_text">我的歌單</string>
+  <string name="btn_add_to_text">添加到</string>
+  <string name="btn_download_text">下載</string>
+  <string name="btn_share_text">分享</string>
+  <string name="btn_favorite_text">收藏</string>
+  <string name="btn_remove_text">刪除</string>
+  <string name="text_hound_prompt">點擊開始識別</string>
+  <string name="text_bt_begin_hound">開始識別</string>
+  <string name="text_hound_failed_prompt">沒有匹配到</string>
+  <string name="text_bt_re_hound">重新識別</string>
+  <string name="text_bt_continue_hound">繼續識別</string>
+  <string name="all_star">全明星</string>
+  <string name="no_music_text">沒有音樂</string>
+  <string name="scan_prompt_message_text">在這裏流覽或掃描本地音樂檔</string>
+  <string name="btn_scan_song_text">掃描音樂檔</string>
+  <string name="text_playlist">歌單</string>
+  <string name="add_song">添加歌曲</string>
+  <string name="btn_add_text">添加</string>
+  <string name="hint_song_name">音樂</string>
+  <string name="hint_artist_name">歌手</string>
+  <string name="hint_album_name">專輯</string>
+  <string name="remove_local_song_text">同時刪除音樂檔</string>
+  <string name="text_create_new_play_list">創建歌單</string>
+  <string name="text_my_favorites">我的收藏</string>
+  <string name="text_title_add_to">添加到</string>
+  <string name="song_synchronize">掃描音樂檔</string>
+  <string name="song_hound">識別歌曲</string>
+  <string name="sleep_mode">睡眠模式</string>
+  <string name="close_sleep_mode">關閉隨眠模式</string>
+  <string name="music_settings">音樂設置</string>
+  <string name="exit">退出</string>
+  <string name="svg_200">M101.09,22.816c40.253,0.01,56.453,0.014,67.326,10.891c10.87,10.877,10.866,26.648,10.856,67.332
+	c-0.01,41.088-0.014,56.455-10.928,67.365c-10.838,10.832-27.432,10.828-67.293,10.818c-39.748-0.01-56.453-0.014-67.457-11.023
+	c-11.245-11.251-10.734-27.347-10.724-67.199c0.01-40.937,0.014-56.455,10.803-67.238C44.636,22.802,60.256,22.806,101.09,22.816z</string>
+  <string name="svg_180">M90.025,0.001c46.324,0.012,64.968,0.016,77.481,12.534c12.51,12.518,12.505,30.667,12.493,77.488
+	c-0.012,47.285-0.016,64.97-12.576,77.526c-12.473,12.466-31.57,12.461-77.443,12.45c-45.743-0.012-64.968-0.016-77.632-12.686
+	C-0.593,154.365-0.005,135.841,0.007,89.978c0.012-47.112,0.016-64.97,12.432-77.38C25.056-0.015,43.032-0.01,90.025,0.001z</string>
+  <string name="albumsongseparator">, </string>
+  <string name="notification_artist_album">
+    <xliff:g id="album">%2$s</xliff:g>\n<xliff:g id="artist">%1$s</xliff:g>
+  </string>
+  <string name="unknownwidget">未知</string>
+  <string name="online_downloading">下載中</string>
+  <string name="download_queued">下載中</string>
+  <string name="online_pause">暫停</string>
+  <string name="text_all_album">所有專輯</string>
+  <string name="sleep_start">睡眠模式</string>
+  <string name="sleep_close">關閉睡眠模式</string>
+  <string name="sleep_tip">請設置自動關閉的時間（分鐘）</string>
+  <string name="sleep_set_ok">睡眠模式已啟用，將在%1$d分鐘後自動關閉</string>
+  <string name="sleep_close_ok">睡眠模式已關閉</string>
+  <string name="sleep_start_ok">睡眠模式已開啟</string>
+  <string name="sleep_time_min">1</string>
+  <string name="sleep_time_max">90</string>
+  <string name="ok">確定</string>
+  <string name="sleep_set">%1$d分鐘</string>
+  <string name="record">我的錄音</string>
+  <string name="setting_backlight_title">播放時螢幕常亮</string>
+  <string name="setting_backlight_key">isbacklight</string>
+  <string name="setting_backlight_summary">在當前播放頁，螢幕背光保持常亮</string>
+  <string name="setting_lewaid_title">樂蛙ID</string>
+  <string name="setting_lewaid_key">lewaidkey</string>
+  <string name="setting_downimg_summary">播放音樂時下載歌手圖片</string>
+  <string name="setting_downlrc_title">下載歌詞</string>
+  <string name="setting_downInfo_title">下載歌曲資訊</string>
+  <string name="setting_downlrc_summary">播放音樂時下載歌詞</string>
+  <string name="setting_downlrc_key">isdownlrc</string>
+  <string name="setting_downimg_title">下載歌手圖片</string>
+  <string name="setting_downimg_key">isdownimg</string>
+  <string name="setting_downInfo_key">isdownInfo</string>
+  <string name="setting_flowhint_key">isflowhint</string>
+  <string name="setting_filtersongs_key">isfiltersongs</string>
+  <string name="setting_download_title">僅通過WLAN下載歌曲圖片</string>
+  <string name="setting_download_summary">僅在連接Wi-Fi時下載歌手及專輯圖片</string>
+  <string name="setting_download_key">downloadmethod</string>
+  <string name="musicsettings">音樂設置</string>
+  <string name="setting_download">下載設置</string>
+  <string name="setting_basic">播放設置</string>
+  <string name="setting_bg_title">背景換膚</string>
+  <string name="setting_bg_key">bgchanging</string>
+  <string name="setting_shake_title">甩動換歌</string>
+  <string name="setting_shake_summary">播放時左右甩動手機切換到下一首</string>
+  <string name="setting_shake_key">isshake</string>
+  <string name="shake_degree_title">甩歌靈敏度</string>
+  <string name="shake_degree_summary">調節甩動換歌的靈敏度</string>
+  <string name="shake_degree_key">shakedegree</string>
+  <string name="setting_fade_key">isfade</string>
+  <string name="shake_degree_gentle">輕柔</string>
+  <string name="shake_degree_easy">輕鬆</string>
+  <string name="shake_degree_common" />
+  <string name="shake_degree_excited">興奮</string>
+  <string name="shake_degree_force">暴力</string>
+  <string name="setting_show_spectrum">頻譜圖顯示</string>
+  <string name="setting_show_spectrum_summary">顯示音樂的節奏跳動，關閉可提高性能</string>
+  <string name="setting_show_spectrum_key">isShowSpectrum</string>
+  <string name="onesong">1首歌</string>
+  <plurals name="Nsongs">
+    <item quantity="other">
+      <xliff:g id="songNum">%d</xliff:g>
+            songs
+        </item>
+  </plurals>
+  <plurals name="Nsongscomp">
+    <item quantity="other">
+      <xliff:g id="songNumOfArtist">%2$d</xliff:g>
+            of
+            <xliff:g id="total_count">%1$d</xliff:g>
+            songs
+        </item>
+  </plurals>
+  <plurals name="Nalbums">
+    <item quantity="one">1 album</item>
+    <item quantity="other">
+      <xliff:g id="albumNum">%d</xliff:g>
+            albums
+        </item>
+  </plurals>
+  <skip />
+  <!-- <string name="durationformatshort" translatable="false">
+    <xliff:g id="format">%2$d:%5$02d</xliff:g>
+  </string>
+  <string name="durationformatlong" translatable="false">
+    <xliff:g id="format">%1$d:%3$02d:%5$02d</xliff:g>
+  </string>-->
+  <string name="goto_start">媒體庫</string>
+  <string name="party_shuffle">Party shuffle</string>
+  <string name="party_shuffle_off">Party shuffle off</string>
+  <string name="delete_item">刪除</string>
+  <string name="shuffle_all">Shuffle all</string>
+  <string name="play_all">播放所有</string>
+  <string name="delete_artist_desc">“<xliff:g id="artist">%s</xliff:g> from the SD card?</string>
+  <string name="delete_artist_desc_nosdcard">“<xliff:g id="artist">%s</xliff:g> from USB storage?</string>
+  <string name="delete_album_desc">整張專輯“<xliff:g id="album">%s</xliff:g>\" from the SD card?</string>
+  <string name="delete_album_desc_nosdcard">整張專輯“<xliff:g id="album">%s</xliff:g>\" from USB storage?</string>
+  <string name="delete_song_desc">“<xliff:g id="song">%s</xliff:g>\" from the SD card?</string>
+  <string name="delete_song_desc_nosdcard">“<xliff:g id="song">%s</xliff:g>\" from USB storage?</string>
+  <string name="delete_confirm_button_text">確定</string>
+  <plurals name="NNNtracksdeleted">
+    <item quantity="one">1 song was deleted.</item>
+    <item quantity="other">
+      <xliff:g id="songs_to_delete">%d</xliff:g>
+            songs were deleted.
+        </item>
+  </plurals>
+  <string name="scanning">正在掃描</string>
+  <string name="scanning_nosdcard">沒有SD卡</string>
+  <string name="nowplaying_title">正在播放</string>
+  <string name="partyshuffle_title">Party shuffle</string>
+  <string name="artists_title">歌手</string>
+  <string name="albums_menu">專輯</string>
+  <string name="albums_title">專輯</string>
+  <string name="tracks_menu">歌</string>
+  <string name="tracks_title">歌曲</string>
+  <string name="playlists_menu">歌單</string>
+  <string name="playlists_title">歌單</string>
+  <string name="videos_title">視頻</string>
+  <string name="all_title">所有媒體</string>
+  <string name="browse_menu">歌手</string>
+  <string name="search_title">搜索</string>
+  <string name="no_tracks_title">無歌曲</string>
+  <string name="no_videos_title">無視頻</string>
+  <string name="no_playlists_title">沒有歌單</string>
+  <string name="delete_playlist_menu">刪除</string>
+  <string name="edit_playlist_menu">編輯</string>
+  <string name="rename_playlist_menu">重命名</string>
+  <string name="playlist_deleted_message">播放列表已刪除</string>
+  <string name="playlist_renamed_message">歌單已經重命名</string>
+  <string name="recentlyadded">最近添加</string>
+  <string name="recentlyadded_title">最近添加</string>
+  <string name="podcasts_listitem">播客</string>
+  <string name="podcasts_title">播客</string>
+  <string name="sdcard_missing_title">沒有SD卡</string>
+  <string name="sdcard_missing_title_nosdcard">沒有USB存儲</string>
+  <string name="sdcard_missing_message">手機中未插入 SD 卡。</string>
+  <string name="sdcard_missing_message_nosdcard">你的手機沒有USB存儲</string>
+  <string name="sdcard_busy_title">找不到SD卡</string>
+  <string name="sdcard_busy_title_nosdcard">USB存儲不可用</string>
+  <string name="sdcard_busy_message">SD卡已經被佔用</string>
+  <string name="sdcard_busy_message_nosdcard">USB存儲正被佔用</string>
+  <string name="sdcard_error_title">SD卡錯誤</string>
+  <string name="sdcard_error_title_nosdcard">USB存儲錯誤</string>
+  <string name="sdcard_error_message">SD卡錯誤</string>
+  <string name="sdcard_error_message_nosdcard">USB存儲錯誤</string>
+  <string name="unknown_artist_name">未知歌手</string>
+  <string name="unknown_album_name">未知專輯</string>
+  <string name="shuffle_on_notif">隨機播放</string>
+  <string name="shuffle_off_notif">Shuffle is off.</string>
+  <string name="repeat_off_notif">重複播放已關閉</string>
+  <string name="repeat_current_notif">重複當前歌曲</string>
+  <string name="repeat_all_notif">重複播放所有歌曲</string>
+  <string name="ringtone_menu">設為來電鈴聲</string>
+  <string name="ringtone_menu_short">設置為鈴聲</string>
+  <string name="ringtone_set">已將“<xliff:g example="Alarm Bell" id="name">%s</xliff:g>\" set as phone ringtone.</string>
+  <string name="play_selection">播放</string>
+  <string name="add_to_playlist">添加到</string>
+  <string name="queue">當前播放列表</string>
+  <string name="new_playlist">新建播放列表</string>
+  <string name="new_playlist_name_template">我的歌單 <xliff:g id="number">%d</xliff:g>
+  </string>
+  <plurals name="NNNtrackstoplaylist">
+    <item quantity="one">1 song added to playlist.</item>
+    <item quantity="other">
+      <xliff:g example="27" id="number">%d</xliff:g>
+            songs added to playlist.
+        </item>
+  </plurals>
+  <string name="emptyplaylist">播放列表為空</string>
+  <string name="create_playlist_create_text">保存</string>
+  <string name="create_playlist_overwrite_text">覆蓋</string>
+  <string name="service_start_error_title">Playback problem</string>
+  <string name="service_start_error_msg">歌曲不能播放</string>
+  <string name="service_start_error_button">確定</string>
+  <string-array name="weeklist">
+    <item>"1周"</item>
+    <item>"2周"</item>
+    <item>"3周"</item>
+    <item>"4周"</item>
+    <item>"5周"</item>
+    <item>"6周"</item>
+    <item>"7周"</item>
+    <item>"8周"</item>
+    <item>"9周"</item>
+    <item>"10周"</item>
+    <item>"11周"</item>
+    <item>"12周"</item>
+  </string-array>
+  <string name="weekpicker_set">完成</string>
+  <string name="weekpicker_title">設置時間</string>
+  <color name="dragndrop_background">#e0103010</color>
+  <color name="expanding_child_background">#ff404040</color>
+  <string name="save_as_playlist">另存為歌單</string>
+  <string name="clear_playlist">清除歌單</string>
+  <string name="musicbrowserlabel">陰雨</string>
+  <string name="musicshortcutlabel">播放列表</string>
+  <string name="mediaplaybacklabel">音樂</string>
+  <string name="videobrowserlabel">視頻</string>
+  <string name="mediapickerlabel">音樂</string>
+  <string name="playback_failed">抱歉，播放器不支持此類型的音頻檔。</string>
+  <string name="cancel">取消</string>
+  <string name="remove_from_playlist">從播放列表中移除</string>
+  <string name="streamloadingtext">連接到<xliff:g id="host">%s</xliff:g>\u2026</string>
+  <string name="mediasearch">搜索<xliff:g example="Beethoven" id="term">%s</xliff:g> using:</string>
+  <string name="working_artists">Artists\u2026</string>
+  <string name="working_albums">Albums\u2026</string>
+  <string name="working_songs">Songs\u2026</string>
+  <string name="working_playlists">Playlists\u2026</string>
+  <string name="loading">正在載入</string>
+  <string name="sort_by_track">曲目</string>
+  <string name="sort_by_album">專輯</string>
+  <string name="sort_by_artist">歌手</string>
+  <string name="music_picker_title">選擇曲目</string>
+  <string name="search_settings_description">歌手、專輯和曲目</string>
+  <string name="search_hint">搜索歌曲</string>
+  <string name="fast_scroll_alphabet">\u0020ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+  <string name="widget_initial_text">點擊選擇音樂</string>
+  <string name="effectspanel">音效</string>
+  <string name="create_playlist_create_text_prompt">播放列表名稱</string>
+  <string name="eq_current">當前效果：</string>
+  <string name="click_to_shuffle">點擊隨機播放</string>
+  <string name="music_setting">音樂設置</string>
+  <string name="setting_networking">聯網設定</string>
+  <string name="flow_hint">流量提示</string>
+  <string name="setting_flowhint_summary">數據流量試聽下載時彈出窗口提示</string>
+  <string name="file_filter">檔過濾</string>
+  <string name="filter_songs">過濾60秒以下歌曲</string>
+  <string name="filter_songs_hint">可以過濾掉小的音頻檔</string>
+  <string name="folder">音樂目錄過濾</string>
+  <string name="EQ">均衡器設置</string>
+  <string name="adjust_EQ">設置音樂的不同旋律</string>
+  <string name="choose_folder">過濾不需要播放的檔夾目錄</string>
+  <string name="setting_fade_title">音量淡入淡出</string>
+  <string name="setting_fade_summary">切換歌曲時音量平滑過渡</string>
+  <string name="menu_done">完成</string>
+  <string name="no_selected_song">請先選擇歌曲</string>
+  <string name="remove_song_file_prompt_text">確定刪除所選歌曲檔？</string>
+  <string name="title_browse">發現</string>
+  <string name="title_artist">歌手</string>
+  <string name="title_album">專輯</string>
+  <string name="title_mine">我的</string>
+  <string name="title_local">本地</string>
+  <string name="repeat_single">已切換至單曲循環模式</string>
+  <string name="repeat_all">已切換至循環播放模式</string>
+  <string name="shuffle">已切換至隨機播放模式</string>
+  <string name="EQ_title_text">均衡器</string>
+  <string name="eq_volume">音量：</string>
+
+  	<string name="synchron_title">掃描音樂文件</string>
+	<string name="synchron_message">正在掃描...</string>
+    <string name="first_dialog_title">歡迎使用音樂播放器</string>
+    <string name="first_dialog_message">首次使用，默認將所有音頻文件添加到播放器，你是否要選擇你的音樂文件目錄？</string>
+    <string name="dialog_positive">去選擇</string>
+    <string name="dialog_negative">不用了</string>
+	<string name="select_folder">選擇音樂目錄</string>
+    <string name="no_folder">請至少選擇一個文件夾</string>
+    <string name="nosd">沒有找到SD卡</string>
+    <string name="no_folders">手機中沒有歌曲文件</string>
+	<string name="title_dialog_xml">刪除</string>
+    <string name="no_songs">列表中沒有歌曲文件</string>
+	<string name="title_actionbar_selected_items">已選擇%1$d個</string>
+	<string name="phone_no_songs">手機中沒有歌曲</string>
+	<string name="download_lrc_off_hint">下載歌詞設置為關閉狀態</string>
+	<string name="loadlrc">正在加載歌詞...</string>
+	<string name="lrc_down_notfound">沒有找到歌詞</string>
+    <string name="no_network">沒有網絡連接</string>
+	<string name="no_network_text">網絡未連接,請檢查後重試</string>
+	<string name="no_copyright_text">版權原因,歌曲已經下架</string>
+	<string name="no_buffer_text">緩沖失敗,請檢查網絡是否連接</string>
+    <!--<string name="playcurrent_failed">“<xliff:g id="TRACKNAME">%s</xliff:g>”歌曲無法播放，文件格式不支持或文件不存在</string> -->
+	<string name="playcurrent_failed">歌曲無法播放，文件格式不支持或文件不存在</string>
+    <string name="inland">內地</string>
+    <string name="hk_tw">港臺</string>
+    <string name="west">歐美</string>
+    <string name="japan_korea">日韓</string>
+    <string name="other">其他</string>
+	<string name="wait_for_download">等待下載...</string>
+	<string name="download_fail">下載失敗,點擊重新下載</string>
+    <string name="download_incorrect_Id">歌曲Id不正確</string>
+    <string name="download_resume">點擊繼續下載</string>
+    <string name="no_avaliable_space">存儲空間不足</string>
+    <string name="down_task_num">%1$d項任務</string>
+    <string name="open_download">點擊打開下載列表</string>
+    <string name="download_done">下載完成</string>
+    <string name="downloading">正在下載</string>
+    <string name="download_paused">下載已暫停</string>
+    <string name="add_to_download">“<xliff:g id="name">%s</xliff:g>”已加入下載列表</string>
+    <string name="enter_name">請輸入歌曲名或歌手名</string>
+    <string name="clear_histroy">清除歷史記錄</string>
+    <string name="no_result">沒有找到音樂</string>
+    <string name="song_num_add_to_playlist">%1$d首歌曲已添加到播放列表</string>
+</resources>

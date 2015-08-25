@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/mini_cover_frame_size"
+    android:layout_height="@dimen/mini_cover_frame_size"
+    android:layout_centerVertical="true">
+
+    <com.lewa.view.MaskImage.MaskImageView
+        android:id="@id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:focusable="false"
+        app:layout_size="@dimen/mini_cover_size"
+        android:src="@drawable/cover" />
+
+    <LinearLayout
+        android:id="@id/bt_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="right|bottom">
+ 
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:focusable="false"
+            android:src="@drawable/ic_playable" />
+
+            <!-- android:src="@drawable/ic_playable ic_playable_browser"-->
+    </LinearLayout>
+
+</FrameLayout>

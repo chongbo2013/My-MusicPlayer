@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	
+	<string name="song_name_null_hint">Song name cannot be empty</string>
+	<string name="artist_name_null_hint">The singer name cannot be empty singer name cannot be empty</string>
+
+
+	<string name="text_name_exist">the name has existed</string>
+	<string name="limit_hint_text">The input limit has been reached</string>
+	<string name="search_text_hint">Song、Artist、Album</string>
+	<string name="favorite_remove_successfully_toast_text">Successfully removed from my favorite</string>
+	<string name="song_add_to"><xliff:g id="name">%s</xliff:g> add to <xliff:g id="name">%s</xliff:g></string>
+
+	<string name="setting_general">General setting</string>
+	<string name="song_number_postfix">songs</string>
+
+	<string name="share_title">Share To Friends</string>
+	<string name="share_content">I found a very nice song in the lewa music player,  Let us listen song \n <xliff:g id="app_name">%1$s</xliff:g>  \n <xliff:g id="app_url">%2$s</xliff:g></string>
+	<string name="text_all_album">all local album</string>
+	<string name="nosdcard_title">SD card unmounted</string>
+	<string name="nousb_title">USB storage unmounted</string>
+	<string name="music_pro_def">0:00</string>
+    <string name="track_name_def">没有歌曲在播放</string>
+    <string name="artist_name_def">无</string>
+    <string name="mine_my_favorite">My favorite</string>
+    <string name="mine_recent_play">Recently play</string>
+    <string name="mine_my_download">My download</string>
+	<string name="artist_blank">&#160;&#160;&#160;</string>
+	<string name="title_blank">&#160;&#160;&#160;</string>
+	
+    <string name="Hearing_loss">Avoid listening in large volume to protect your ears</string>
+	
+    <string name="app_name">Music</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_play">PlayActivity</string>
+    <string name="title_activity_library">LibraryActivity</string>
+    <string name="title_activity_song_hound">SongHoundActivity</string>
+    <string name="title_activity_song_hound_history">HoundHistoryActivity</string>
+
+    <string name="text_search_hint">search</string>
+    <string name="text_all_songs">all music</string>
+    <string name="create_playlist">create playlist</string>
+    <string name="top_list">top list</string>
+    <string name="text_song_num">%1$d songs</string>
+	<string name="text_album_num">%1$d albums</string>
+
+    <string name="edit_playlist_success_toast_text">%1$d songs added to %2$s</string>
+    <string name="remove_playlistsong_success_toast_text">%1$d songs removed from %2$s</string>
+
+    <string name="check_song_number">%1$d chosen</string>
+    <string name="btn_show_all_albums_text">Display full album</string>
+
+    <string name="title_cover_dialog">playlist cover</string>
+    <string name="common_msg_nosdcard">SD card not found</string>
+    <string name="common_msg_get_photo_failure">Failed to get picture</string>
+    <string name="common_msg_get_not_image_file">You can only choose image file as cover</string>
+
+    <string name="photoPickerNotFoundText">No picture in your phone</string>
+
+    <string name="remove_song_text">remove song from playlist</string>
+    <string name="remove_song_file_text">delete music file</string>
+    <string name="remove_song_prompt_text">Are you sure to remove selected songs？</string>
+    <string name="item_modify_text">Edit</string>
+    <string name="item_remove_text">Delete</string>
+    <string name="remove_dialog_message_text">Are you sure to delete the playlist?</string>
+
+    <string name="favorite_successfully_toast_text">Successfully added to my favorite</string>
+    <string name="rename_playlist_same_prompt">Successfully added to my favorite</string>
+
+    <string name="traffic_tip_text">Data flow notice</string>
+    <string name="traffic_tip_message_text">Not in wifi environment, continuing playing will cause data expense</string>
+    <string name="continue_play_text">Continue</string>
+    <string name="cancel_cn_text">Cancel</string>
+    <string name="ok_cn_text">OK</string>
+
+    <string name="no_artist_album_text">No song of the singer found in local library该歌手本地没有对应的专辑</string>
+
+    <string name="no_sdcard_title_text">SD card not available</string>
+    <string name="no_sdcard_message_text">Please plug in SD card and try again</string>
+
+
+    <string name="text_all_local_songs">all local music</string>
+    <string name="playlist_dialog_title">edit playlist</string>
+    <string name="remove_playlist_title">delete playlist</string>
+    <string name="cancel_text">cancel</string>
+    <string name="ok_text">ok</string>
+    <string name="edit_song_text">edit music information</string>
+    <string name="new_songs_list">new music list</string>
+    <string name="hot_songs_list">hot music list</string>
+    <string name="edit_playlist">edit playlist</string>
+    <string name="text_song_hound_title">recognize music</string>
+    <string name="btn_create_track_text">create playlist</string>
+    <string name="text_playlist_cover">playlist cover</string>
+    <string name="hint_playlist_name">playlist name</string>
+    <string name="default_playlist_name_text">my playlist</string>
+    <string name="btn_add_to_text">add to</string>
+    <string name="btn_download_text">download</string>
+    <string name="btn_share_text">share</string>
+    <string name="btn_favorite_text">like</string>
+    <string name="btn_remove_text">delete</string>
+    <string name="EQ_title_text">EQ</string>
+    <string name="text_hound_prompt">click to start recognizing</string>
+    <string name="text_bt_begin_hound">start recognizing</string>
+    <string name="text_hound_failed_prompt">no matching</string>
+    <string name="text_bt_re_hound">restart recognizing</string>
+    <string name="text_bt_continue_hound">continue recognizing</string>
+    <string name="all_star">all star</string>
+    <string name="no_music_text">no music yet</string>
+    <string name="scan_prompt_message_text">you can browse music, or scan your local music files here.</string>
+    <string name="btn_scan_song_text">scan music files</string>
+    <string name="text_playlist">playlist</string>
+    <string name="add_song">add music</string>
+    <string name="btn_add_text">add</string>
+    <string name="hint_song_name">music</string>
+    <string name="hint_artist_name">artist</string>
+    <string name="hint_album_name">album</string>
+    <string name="remove_local_song_text">remove local music file meanwhile</string>
+
+    <string name="text_create_new_play_list">create playlist</string>
+    <string name="text_my_favorites">my favorite</string>
+    <string name="text_title_add_to">add to</string>
+
+
+    <string name="song_synchronize">Scan music files</string>
+    <string name="song_hound">recognize song</string>
+    <string name="sleep_mode">Sleep mode</string>
+    <string name="close_sleep_mode">switch off sleep mode</string>
+    <string name="music_settings">music settings</string>
+    <string name="exit">Exit</string>
+
+    <string name="svg_200">M101.09,22.816c40.253,0.01,56.453,0.014,67.326,10.891c10.87,10.877,10.866,26.648,10.856,67.332
+	c-0.01,41.088-0.014,56.455-10.928,67.365c-10.838,10.832-27.432,10.828-67.293,10.818c-39.748-0.01-56.453-0.014-67.457-11.023
+	c-11.245-11.251-10.734-27.347-10.724-67.199c0.01-40.937,0.014-56.455,10.803-67.238C44.636,22.802,60.256,22.806,101.09,22.816z</string>
+
+    <string name="svg_180">M90.025,0.001c46.324,0.012,64.968,0.016,77.481,12.534c12.51,12.518,12.505,30.667,12.493,77.488
+	c-0.012,47.285-0.016,64.97-12.576,77.526c-12.473,12.466-31.57,12.461-77.443,12.45c-45.743-0.012-64.968-0.016-77.632-12.686
+	C-0.593,154.365-0.005,135.841,0.007,89.978c0.012-47.112,0.016-64.97,12.432-77.38C25.056-0.015,43.032-0.01,90.025,0.001z</string>
+
+    <string name="albumsongseparator">\n</string>
+
+    <!-- Used for the 2nd and 3rd line (artist and album) in the notification area item for the music app -->
+    <string name="notification_artist_album"><xliff:g id="album">%2$s</xliff:g>\n<xliff:g id="artist">%1$s</xliff:g></string>
+
+    <!--    from lewa -->
+    <string name="unknownwidget">Unknown</string>
+    <string name="online_downloading">progress</string>
+    <string name="download_queued">already in downloading queue</string>
+    <string name="online_pause">pause</string>
+    <string name="sleep_start">Sleep Timer</string>
+    <string name="sleep_close">close sleep timer</string>
+    <string name="sleep_tip">Please set the timer for stopping the player(in mins)</string>
+    <string name="sleep_set_ok">player will stop playing after %1$d minute(s)</string>
+    <string name="sleep_close_ok">Sleep timer stopped</string>
+	<string name="sleep_start_ok">Sleep timer started</string>
+    <string name="sleep_time_min">1</string>
+    <string name="sleep_time_max">90</string>
+    <string name="ok">OK</string>
+    <string name="sleep_set">%1$dmin(s)</string>
+    <string name="record">my record</string>
+
+    <string name="setting_auto_play">Auto play</string>
+    <string name="setting_auto_play_summary">Auto play music on back.</string>
+    <string name="setting_auto_play_key">autoPlay</string>
+    <string name="setting_backlight_title">Always on</string>
+    <string name="setting_backlight_key">isbacklight</string>
+    <string name="setting_backlight_summary">Screen remains on while the song is playing</string>
+    <string name="setting_lewaid_title">LeWa ID</string>
+    <string name="setting_lewaid_key">lewaidkey</string>
+    <string name="setting_downimg_summary">Artist picture and album art</string>
+    <string name="setting_downlrc_title">Get lyrics</string>
+    <string name="setting_downInfo_title">Download songs information</string>
+    <string name="setting_downlrc_summary">Get lyrics</string>
+    <string name="setting_downlrc_key">isdownlrc</string>
+    <string name="setting_downimg_title">Get artwork</string>
+    <string name="setting_downimg_key">isdownimg</string>
+    <string name="setting_downInfo_key">isdownInfo</string>
+    <string name="setting_flowhint_key">isflowhint</string>
+    <string name="setting_filtersongs_key">isfiltersongs</string>
+    <string name="setting_download_title">Download and Streaming</string>
+    <string name="setting_download_summary">WiFi Only</string>
+    <string name="setting_download_key">downloadmethod</string>
+    <string name="musicsettings">LeWa Player Settings</string>
+    <string name="setting_download">Download Setting</string>
+    <string name="setting_basic">Basic Setting</string>
+    <string name="setting_bg_title">Change background</string>
+    <string name="setting_bg_key">bgchanging</string>
+    <string name="setting_shake_title">Shake to skip</string>
+    <string name="setting_shake_summary">Shake phone to skip to the next track</string>
+    <string name="setting_shake_key">isshake</string>
+    <string name="shake_degree_title">Shake sensitivity</string>
+    <string name="shake_degree_summary">Adjust how much force is needed to skip songs</string>
+    <string name="shake_degree_key">shakedegree</string>
+    <string name="setting_fade_key">isfade</string>
+    <string name="shake_degree_gentle">Gentle</string>
+    <string name="shake_degree_easy"></string>
+    <string name="shake_degree_common"></string>
+    <string name="shake_degree_excited"></string>
+    <string name="shake_degree_force">Violent</string>
+    <string name="setting_show_spectrum">Show spectral View</string>
+    <string name="setting_show_spectrum_summary">Display the rhythm of the music beat, closed can improve performance</string>
+    <string name="setting_show_spectrum_key">isShowSpectrum</string>
+
+    <!--    from native -->
+
+    <!-- used in various places to indicate there is one song for a given artist or album -->
+    <string name="onesong">1 song</string>
+    <!-- used in various places to indicate there is some number other than one songs for a given artist or album. -->
+    <plurals name="Nsongs">
+        <item quantity="other">
+            <xliff:g id="songNum">%d</xliff:g>
+            songs
+        </item>
+    </plurals>
+
+    <!-- shows how many songs on the album are by the selected artist, out of how many total, if those two numbers are different -->
+    <plurals name="Nsongscomp">
+        <item quantity="other">
+            <xliff:g id="songNumOfArtist">%2$d</xliff:g>
+            of
+            <xliff:g id="total_count">%1$d</xliff:g>
+            songs
+        </item>
+    </plurals>
+
+    <!-- Used in artists list view, indicates how many albums exist for a given artist. -->
+    <plurals name="Nalbums">
+        <!-- number of albums is one -->
+        <item quantity="one">1 album</item>
+        <!-- number of albums is not equal to one -->
+        <item quantity="other">
+            <xliff:g id="albumNum">%d</xliff:g>
+            albums
+        </item>
+    </plurals>
+
+    <!--
+    This string is used as the format string in a String.format call,
+    and 5 additional arguments are available for printing:
+    1 - hours
+    2 - minutes
+    3 - minutes%60
+    4 - seconds
+    5 - second%60
+    -->
+    <skip />
+    <!-- Do not translate. Duration format for duration < 1 hour -->
+    <string translatable="false" name="durationformatshort"><xliff:g id="format">%2$d:%5$02d</xliff:g></string>
+    <!-- Do not translate. Duration format for duration >= 1 hour -->
+    <string translatable="false" name="durationformatlong"><xliff:g id="format">%1$d:%3$02d:%5$02d</xliff:g></string>
+
+    <!-- Menu item that takes the user back to the top level screen of the music player -->
+    <string name="goto_start">Library</string>
+    <!-- Menu item that switches the music player in to party shuffle mode -->
+    <string name="party_shuffle">Party shuffle</string>
+    <!-- Menu item that switches the music player out of party shuffle mode -->
+    <string name="party_shuffle_off">Party shuffle off</string>
+    <!-- Menu item that deletes the currently selected item, which might be a single song, or a collection of songs.
+         The user will be prompted to confirm before deletion actually takes place -->
+    <string name="delete_item">Delete</string>
+    <!-- Menu item to play back all the songs in the currently showing list in shuffle mode -->
+    <string name="shuffle_all">Shuffle all</string>
+    <!-- Menu item to play back all the songs in the currently showing list in list order -->
+    <string name="play_all">Play all</string>
+
+    <!-- Delete confirmation dialog when deleting an entire artist -->
+    <string name="delete_artist_desc">Permanently delete all songs by <xliff:g id="artist">%s</xliff:g> from the SD card?</string>
+    <!-- Delete confirmation dialog when deleting an entire artist -->
+    <string name="delete_artist_desc_nosdcard">Permanently delete all songs by <xliff:g id="artist">%s</xliff:g> from USB storage?</string>
+
+    <!-- Delete confirmation dialog when deleting an entire album -->
+    <string name="delete_album_desc">Permanently delete the entire album \"<xliff:g id="album">%s</xliff:g>\" from the SD card?</string>
+    <!-- Delete confirmation dialog when deleting an entire album -->
+    <string name="delete_album_desc_nosdcard">Permanently delete the entire album \"<xliff:g id="album">%s</xliff:g>\" from USB storage?</string>
+
+    <!-- Delete confirmation dialog when deleting a single song -->
+    <string name="delete_song_desc">Permanently delete \"<xliff:g id="song">%s</xliff:g>\" from the SD card?</string>
+    <!-- Delete confirmation dialog when deleting a single song -->
+    <string name="delete_song_desc_nosdcard">Permanently delete \"<xliff:g id="song">%s</xliff:g>\" from USB storage?</string>
+
+    <!-- Delete confirmation dialog, confirmation button text -->
+    <string name="delete_confirm_button_text">OK</string>
+    <!-- Toast confirming that song(s) was/were deleted. -->
+    <plurals name="NNNtracksdeleted">
+        <!-- delete confirmation message for 1 song -->
+        <item quantity="one">1 song was deleted.</item>
+        <!-- delete confirmation message for 0 or more than 1 songs -->
+        <item quantity="other">
+            <xliff:g id="songs_to_delete">%d</xliff:g>
+            songs were deleted.
+        </item>
+    </plurals>
+
+    <!-- shown in dialog while the media scanner is starting up -->
+    <string name="scanning">Scanning SD card\u2026</string>
+    <!-- shown in dialog while the media scanner is starting up -->
+    <string name="scanning_nosdcard">Scanning USB storage\u2026</string>
+
+    <!-- title of the "current playlist" screen when not in party shuffle mode -->
+    <string name="nowplaying_title">Now playing</string>
+    <!-- title of the "current playlist" screen when in party shuffle mode-->
+    <string name="partyshuffle_title">Party shuffle</string>
+    <!-- Artist screen title -->
+    <string name="artists_title">Artists</string>
+    <!-- Category label on Library screen -->
+    <string name="albums_menu">Albums</string>
+    <!-- Albums screen title -->
+    <string name="albums_title">Albums</string>
+    <!-- Category label on Library screen -->
+    <string name="tracks_menu">Songs</string>
+    <!-- Songs screen title -->
+    <string name="tracks_title">Songs</string>
+    <!-- Category label on Library screen -->
+    <string name="playlists_menu">Playlists</string>
+    <!-- Playlists screen title -->
+    <string name="playlists_title">Playlists</string>
+    <!-- Videos screen title -->
+    <string name="videos_title">Videos</string>
+    <!-- All media screen title -->
+    <string name="all_title">All media</string>
+    <!-- Category label on Library screen -->
+    <string name="browse_menu">Artists</string>
+    <!-- Library screen, menu item -->
+    <string name="search_title">Search</string>
+    <!-- Title of screen when there are no songs, or if the SD card is busy -->
+    <string name="no_tracks_title">No songs</string>
+    <!-- Title of screen when there are no videos, or if the SD card is busy -->
+    <string name="no_videos_title">No videos</string>
+    <!-- Title of screen when there are no playlists, or if the SD card is busy -->
+    <string name="no_playlists_title">No playlists</string>
+    <!-- Playlist context menu item to delete the selected playlist. -->
+    <string name="delete_playlist_menu">Delete</string>
+    <!-- Playlist context menu item to edit the selected playlist -->
+    <string name="edit_playlist_menu">Edit</string>
+    <!-- Playlist context menu item to rename the selected playlist-->
+    <string name="repeat_single">Switched to single cycle mode</string>
+    <string name="repeat_all">Switched to loop playback mode</string>
+    <string name="shuffle">Switched to shuffle mode</string>
+    <string name="rename_playlist_menu">Rename</string>
+    <!-- Transient popup message shown after deleting a playlist -->
+    <string name="playlist_deleted_message">Playlist deleted.</string>
+    <!-- Transient popup message shown after renaming a playlist -->
+    <string name="playlist_renamed_message">Playlist renamed.</string>
+    <!-- The name of the pseudo-playlist that holds all the recently added files, shown in list view -->
+    <string name="recentlyadded">Recently added</string>
+    <!-- The name of the pseudo-playlist that holds all the recently added files, shown in title bar of songs list -->
+    <string name="recentlyadded_title">Recently added</string>
+    <!-- The name of the pseudo-playlist that holds all the podcasts, shown in list view -->
+    <string name="podcasts_listitem">Podcasts</string>
+    <!-- The name of the pseudo-playlist that holds all the podcasts, shown in title bar of songs list -->
+    <string name="podcasts_title">Podcasts</string>
+    <!-- Title of screen when no sd card is present -->
+    <string name="sdcard_missing_title">No SD card</string>
+    <!-- Title of screen when no sd card is present -->
+    <string name="sdcard_missing_title_nosdcard">No USB storage</string>
+    <!-- label underneath icon used to indicate that no sd card is present -->
+    <string name="sdcard_missing_message">Your phone doesn\'t have an SD card inserted.</string>
+    <!-- label underneath icon used to indicate that no sd card is present -->
+    <string name="sdcard_missing_message_nosdcard">Your phone doesn\'t have USB storage.</string>
+    <!-- label underneath icon used to indicate that the sd card is present, but currently unavailable -->
+    <string name="sdcard_busy_title">SD card unavailable</string>
+    <!-- label underneath icon used to indicate that the sd card is present, but currently unavailable -->
+    <string name="sdcard_busy_title_nosdcard">USB storage unavailable</string>
+    <!-- label underneath icon used to indicate sd card is mounted to your computer via USB -->
+    <string name="sdcard_busy_message">Your SD card is busy.</string>
+    <!-- label underneath icon used to indicate sd card is mounted to your computer via USB -->
+    <string name="sdcard_busy_message_nosdcard">Your USB storage is busy.</string>
+    <!-- Title of screen when there was an error accessing the sd card -->
+    <string name="sdcard_error_title">SD card error</string>
+    <!-- Title of screen when there was an error accessing the sd card -->
+    <string name="sdcard_error_title_nosdcard">USB storage error</string>
+    <!-- label underneath icon used to indicate there was an error accessing the sd card -->
+    <string name="sdcard_error_message">An error was encountered on your SD card.</string>
+    <!-- label underneath icon used to indicate there was an error accessing the sd card -->
+    <string name="sdcard_error_message_nosdcard">An error was encountered on your USB storage.</string>
+    <!-- Default name of artist that doesn't have a name in the metadata -->
+    <string name="unknown_artist_name">Unknown artist</string>
+    <!-- Default name of album that doesn't have a name in the metadata -->
+    <string name="unknown_album_name">Unknown album</string>
+    <!-- Toast after turning shuffle on -->
+    <string name="shuffle_on_notif">Shuffle is on.</string>
+    <!-- Toast after turning shuffle off -->
+    <string name="shuffle_off_notif">Shuffle is off.</string>
+    <!-- Toast after turning repeat off -->
+    <string name="repeat_off_notif">Repeat is off.</string>
+    <!-- Toast after turning single repeat on -->
+    <string name="repeat_current_notif">Repeating current song.</string>
+    <!-- Toast after turning repeat all on -->
+    <string name="repeat_all_notif">Repeating all songs.</string>
+    <!-- Individual song context menu item -->
+    <string name="ringtone_menu">Use as phone ringtone</string>
+    <!-- Menu item -->
+    <string name="ringtone_menu_short">Use as ringtone</string>
+    <!-- Toast after setting a song as phone ringtone -->
+    <string name="ringtone_set">\"<xliff:g id="name" example="Alarm Bell">%s</xliff:g>\" set as phone ringtone.</string>
+    <!-- Context menu item -->
+    <string name="play_selection">Play</string>
+    <!-- Context menu item -->
+    <string name="add_to_playlist">Add to playlist</string>
+    <!-- Context menu item -->
+    <string name="queue">Current playlist</string>
+    <!-- Context menu item -->
+    <string name="new_playlist">New</string>
+    <!-- Template for newly created playlist name -->
+    <string name="new_playlist_name_template">New playlist <xliff:g id="number">%d</xliff:g></string>
+    <!-- Toasts after adding song(s) to playlists -->
+    <plurals name="NNNtrackstoplaylist">
+        <!-- message shown when one song was added -->
+        <item quantity="one">1 song added to playlist.</item>
+        <!-- message shown when zero or more than one song was added -->
+        <item quantity="other">
+            <xliff:g id="number" example="27">%d</xliff:g>
+            songs added to playlist.
+        </item>
+    </plurals>
+    <!-- Toast after selecting an empty playlist -->
+    <string name="emptyplaylist">Selected playlist is empty.</string>
+    <!-- Button name when saving a playlist -->
+    <string name="create_playlist_create_text">Save</string>
+    <!-- Button name when saving a playlist and the new playlist will overwrite an existing one -->
+    <string name="create_playlist_overwrite_text">Overwrite</string>
+    <!-- Dialog box title -->
+    <string name="service_start_error_title">Playback problem</string>
+    <!-- Dialog box message -->
+    <string name="service_start_error_msg">The song couldn\'t be played.</string>
+    <!-- Dialog box button -->
+    <string name="service_start_error_button">OK</string>
+    <!-- Time span edit options that appear when editing system playlist "Recently added" -->
+    <!-- Used to indicate the number of weeks the "recently added" playlist covers in a selector widget -->
+    <string-array name="weeklist">
+        <item>"1 week"</item>
+        <item>"2 weeks"</item>
+        <item>"3 weeks"</item>
+        <item>"4 weeks"</item>
+        <item>"5 weeks"</item>
+        <item>"6 weeks"</item>
+        <item>"7 weeks"</item>
+        <item>"8 weeks"</item>
+        <item>"9 weeks"</item>
+        <item>"10 weeks"</item>
+        <item>"11 weeks"</item>
+        <item>"12 weeks"</item>
+    </string-array>
+    <!-- Button name in time span picker -->
+    <string name="weekpicker_set">Done</string>
+    <!-- Title of time span picker -->
+    <string name="weekpicker_title">Set time</string>
+    <!-- Do not translate. Background color for currently dragged item in playlist edit mode. -->
+    <color name="dragndrop_background">#e0103010</color>
+    <!-- Do not translate. Background color for albums in the artists list view. -->
+    <color name="expanding_child_background">#ff404040</color>
+
+    <!-- menu item to save the current list as a new playlist -->
+    <string name="save_as_playlist">Save as playlist</string>
+    <!-- menu item to clear the current playlist -->
+    <string name="clear_playlist">Clear playlist</string>
+
+    <!-- Activity label. This might show up in the activity-picker -->
+    <string name="musicbrowserlabel">Music</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <string name="musicshortcutlabel">Music playlist</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <string name="mediaplaybacklabel">Music</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <string name="videobrowserlabel">Videos</string>
+    <!-- Activity label. This might show up in the activity-picker -->
+    <string name="mediapickerlabel">Music</string>
+
+    <!-- Shown as a transient message whenever a file fails to play -->
+    <string name="playback_failed">The player doesn\'t support this type of audio file.</string>
+
+    <!-- Text for the "cancel" button in the "delete" and "create playlist" confirmation dialogs -->
+    <string name="cancel">Cancel</string>
+
+    <!-- context menu item to remove the selected item from the playlist -->
+    <string name="remove_from_playlist">Remove from playlist</string>
+
+    <!-- shown when connecting to a music stream, before it starts playing -->
+    <string name="streamloadingtext">Connecting to <xliff:g id="host">%s</xliff:g>\u2026</string>
+
+    <!-- title of contextual music search menu -->
+    <string name="mediasearch">Search for <xliff:g id="term" example="Beethoven">%s</xliff:g> using:</string>
+
+    <!-- Shown in the title bar while the list of artists is being retrieved in the background -->
+    <string name="working_artists">Artists\u2026</string>
+    <!-- Shown in the title bar while the list of albums is being retrieved in the background -->
+    <string name="working_albums">Albums\u2026</string>
+    <!-- Shown in the title bar while the list of songs is being retrieved in the background -->
+    <string name="working_songs">Songs\u2026</string>
+    <!-- Shown in the title bar while the list of playlists is being retrieved in the background -->
+    <string name="working_playlists">Playlists\u2026</string>
+
+    <!-- Shown in the music picker while loading the music database. -->
+    <string name="loading">Loading\u2026</string>
+    <!-- Menu in music picker to sort the list by track/song name. -->
+    <string name="sort_by_track">Tracks</string>
+    <!-- Menu in music picker to sort the list by album name. -->
+    <string name="sort_by_album">Albums</string>
+    <!-- Menu in music picker to sort the list by artist name. -->
+    <string name="sort_by_artist">Artists</string>
+    <!--  Title of the music picker activity. -->
+    <string name="music_picker_title">Choose music track</string>
+
+    <!-- The string used to describe Music as a searchable item within system search settings. -->
+    <string name="search_settings_description">Artists, albums, and tracks</string>
+
+    <!-- Shown in the search box as a hint -->
+    <string name="search_hint">Search Music</string>
+
+    <!--The fast scroll thumb will show one character from this string depending on the position in the list -->
+    <string name="fast_scroll_alphabet">\u0020ABCDEFGHIJKLMNOPQRSTUVWXYZ</string>
+
+    <!-- Text shown on widget when first loaded -->
+    <string name="widget_initial_text">Touch to choose music.</string>
+
+    <!-- Menu text for the item controlling the audio effects panel [CHAR LIMIT=15] -->
+    <string name="effectspanel">Sound effects</string>
+
+	<string name="create_playlist_create_text_prompt">playlist name</string>
+	<string name="eq_current">Special effect: </string>
+    <string name="eq_volume">Volume: </string>
+	<string name="click_to_shuffle">Click to shuffle play</string>
+	<string name="music_setting">Music setting</string>
+	<string name="setting_networking">Networking setting</string>
+	<string name="flow_hint">Data flow notice</string>
+	<string name="setting_flowhint_summary">Warning when downloading with data flow</string>
+	<string name="file_filter">Choose your own music files</string>
+	<string name="filter_songs">Block songs within 60 seconds</string>
+	<string name="filter_songs_hint">Block small audio files</string>
+	<string name="EQ">Equalizer settings</string>
+	<string name="adjust_EQ">Set the melody</string>
+	<string name="folder">Choose your own folder</string>
+	<string name="choose_folder">Block the folders you do not need</string>
+	<string name="setting_fade_title">Volume fade</string>
+	<string name="setting_fade_summary">Smoothly switch when songs change</string>
+	<string name="menu_done">Done</string>
+	<string name="no_selected_song">Please choose a song</string>
+	<string name="remove_song_file_prompt_text">Are you sure to remove selected files?</string>
+	<string name="title_browse">Online</string>
+	<string name="title_artist">Artist</string>
+	<string name="title_album">Album</string>
+	<string name="title_local">Local</string>
+	<string name="title_mine">Mine</string>
+
+
+
+	<string name="synchron_title">Scan music files</string>
+	<string name="synchron_message">Scanning...</string>
+    <string name="first_dialog_title">Welcome To The LeWa Music Player</string>
+    <string name="first_dialog_message">Please select your music folders</string>
+    <string name="dialog_positive">Yes</string>
+    <string name="dialog_negative">No</string>
+    <string name="select_folder">Select your music source</string>
+    <string name="no_folder">Please select at least 1 folder</string>
+    <string name="nosd">SD card unmounted or unavaliable</string>
+    <string name="no_folders">No folders</string>
+    <string name="title_dialog_xml">Delete</string> 
+	<string name="no_songs">No songs</string>
+	<string name="title_actionbar_selected_items">%1$d chosen</string>
+	<string name="phone_no_songs">Your phone has no songs</string>
+	<string name="download_lrc_off_hint">Downloading lyric has been set as closed</string>
+	<string name="loadlrc">Loading...</string>
+    <string name="no_network">Network not available</string>
+	<string name="no_network_text">Network is not connected, please try again after checking</string>
+	<string name="no_copyright_text">Copyright reasons, the song is off the shelf</string>
+	<string name="no_buffer_text">Buffer failed, please check whether the network connection</string>
+	<string name="lrc_down_notfound">Lyrics not found</string>
+    <!--<string name="playcurrent_failed">"<xliff:g id="TRACKNAME">%s</xliff:g>"cannot be played,format is not supported or file does not exist.</string>  -->
+	<string name="playcurrent_failed">cannot be played,format is not supported or file does not exist.</string>  
+    <string name="inland">mainland</string>
+    <string name="hk_tw">Hong Kong and Taiwan</string>
+    <string name="west">Europe</string>
+    <string name="japan_korea">Japan and South Korea</string>
+    <string name="other">other</string>
+	<string name="wait_for_download">Wait for download</string>
+	<string name="download_fail">Download failed,click to download again</string>
+    <string name="download_incorrect_Id">Song id not correct</string>
+    <string name="download_resume">Click to continue download</string>
+    <string name="no_avaliable_space">Lack of storage space</string>
+    
+    <string name="down_task_num">%1$d task</string>
+    <string name="open_download">Click to open the download list</string>
+    <string name="download_done">downloaded</string>
+    <string name="downloading">downloading</string>
+    <string name="download_paused">paused</string>
+    <string name="add_to_download">“<xliff:g id="name">%s</xliff:g>” add to download list</string>
+    <string name="enter_name">Please enter song or artist name</string>
+    <string name="clear_histroy">Clear history</string>
+    <string name="no_result">Music not found</string>
+    <string name="song_num_add_to_playlist">%1$d songs add to </string>
+    <string translatable="false" name="equalizer_max_value">15</string>
+    <string translatable="false" name="equalizer_zero_value">0</string>
+    <string translatable="false" name="equalizer_min_value">-15</string>
+    <string translatable="false" name="equalizer_lower_frequency">60</string>
+    <string translatable="false" name="equalizer_low_frequency">230</string>
+    <string translatable="false" name="equalizer_middle_frequency">910</string>
+    <string translatable="false" name="equalizer_high_frequency">3.6k</string>
+    <string translatable="false" name="equalizer_higher_frequency">14k</string>
+</resources>

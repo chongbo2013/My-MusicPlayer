@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="60dp"
+    android:paddingBottom="15dp"
+    tools:context=".SongHoundActivity$HoundSuccessFragment">
+
+    <ImageView
+        android:id="@id/progressbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/cover_background"
+        android:background="@android:color/transparent"/>
+
+    <RelativeLayout
+        android:id="@id/llo1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <ImageButton
+            android:id="@id/bt_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/se_btn_favorite"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@id/bt_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/se_btn_loop"
+            android:background="@android:color/transparent"/>
+
+        <ImageButton
+            android:id="@id/bt_lyric"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/se_btn_loop"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@id/bt_hound"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:textSize="16.0sp"
+        android:text="@string/text_bt_continue_hound"/>
+
+</RelativeLayout>
